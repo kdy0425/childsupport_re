@@ -1,0 +1,1522 @@
+@charset "utf-8";
+
+#skipNavi {position: absolute; margin: 0 auto; width: 998px; list-style: none; font-size: 1.15em; top: -10.5em; left: 0; z-index: 20; background:#eee; border:1px solid #ccc;}
+#skipNavi a.main_skip{display:none;}
+#skipNavi a:active, #skipNavi a:focus{
+position: absolute; padding-top: 0.5em; width: 998px; height: 2em; top: 10.5em; text-align: center; color: #000; font-weight:bold; background: #eee; border: 1px solid #ccc; outline: 0;}
+
+.contents{position:relative; width:1200px; margin:0 auto; letter-spacing:-1px;}
+.contents:after{clear:both; display:block; content:"";}
+
+/* left */
+#left_menu{float:left; padding-top:48px; width:208px; font-weight:bold;}
+#left_menu h2 {padding:20px 0 40px 0; background:url(https://www.childsupport.or.kr/images/sub/left_title_bg.gif) no-repeat; border-bottom:1px solid #e0e0e0; font-family:"MalgunGothic"; font-weight:bold; font-size:26px; color:#53799c;}
+#left_menu h2.sm{font-size:24px;}
+#left_menu > ul > li > a {display:block; height:15px; padding:14px 14px 14px 11px; border-bottom:1px solid #e0e0e0;}
+#left_menu > ul > li > a > span {display:block; padding-right:20px; font-size:14px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+#left_menu > ul > li > ul{padding:14px 0 4px 14px; border-bottom:1px solid #e0e0e0;}
+#left_menu > ul > li > ul > li{padding:0 0 10px 7px; background:url(https://www.childsupport.or.kr/images/sub/left_dot.gif) 0 6px no-repeat;}
+#left_menu > ul > li.active {border-bottom:none;}
+#left_menu > ul > li.active > a {background:#53799c; color:#fff;}
+#left_menu > ul > li.has_sub > a span {background:url(https://www.childsupport.or.kr/images/sub/left_plus.gif) no-repeat right 4px;}
+#left_menu > ul > li.has_sub > ul {display:none;}
+#left_menu > ul > li.has_sub.active > ul {display:block;}
+#left_menu > ul > li.has_sub.active > a span {background:url(https://www.childsupport.or.kr/images/sub/left_minus.gif) no-repeat right 8px;}
+#left_menu ul ul a.on {display:block; text-decoration:underline; color:#3f7098;}
+#left_menu ul ul a:hover {color:#3f7098;}
+
+/* sub */
+#sub{float:right; padding:30px 0 0 52px; width:919px; border-left:1px solid #e0e0e0;}
+.sub_visual{display:none;}
+.strapline{padding-bottom:30px; border-bottom:1px solid #e0e0e0;}
+.strapline:after{display:block; content:""; clear:both;}
+.strapline h3{float:left; margin-top:17px; padding-top:20px; background:url(https://www.childsupport.or.kr/images/sub/sub_title_bg.gif) 0 0 no-repeat; font-size:36px; font-family:"MalgunGothic"; font-weight:bold; color:#355e7e; letter-spacing: -3px;}
+.sub_option{float:right;}
+.sub_option:after{display:block; content:""; clear:both;}
+.nav{margin-bottom:25px;}
+.nav ul{overflow:hidden;}
+.nav ul li.lst{padding:0; background:none;}
+.nav ul li{float:left; margin-right:9px; padding-right:16px; background:url(https://www.childsupport.or.kr/images/sub/nav_arr.gif) right 5px no-repeat;}
+.nav ul li img{margin-top:2px;}
+.etc{position:relative; float:right;}
+.etc:after{content:""; clear:both; display:block;}
+.etc a{float:left; margin-left:-1px; border:1px solid #e0e0e0;}
+.etc div{display:none; position:absolute; top:33px; right:0;}
+.etc div ul{position:relative; z-index:1;}
+.etc div ul li a{float:none; border:none;}
+
+
+.sub_contents{padding:45px 0; min-height:/*585*/915px}
+
+.sub_tab{margin-bottom:60px;}
+.sub_tab ul:after{display:block; content:""; clear:both;}
+.sub_tab ul li{float:left;}
+.sub_tab ul li a{display:block; margin-left:-1px; padding:10px 0; width:228px; border:1px solid #585858; font-family:"MalgunGothic"; font-weight:bold; font-size:18px; color:#696969; text-align:center;}
+.sub_tab ul li.on a{position:relative; padding:7px 0 10px 0; /*background-color:#2d6497;*/ border:1px solid #2d6497; border-bottom:4px solid #2d6497; color:#2d6497; z-index:1;}
+
+.sub_tab1{margin-bottom:60px;}
+.sub_tab1:after{display:block; content:""; clear:both;}
+.sub_tab1 a{float:left; display:block; margin-left:-1px; padding:10px 0; width:305px; border:1px solid #585858; font-family:"MalgunGothic"; font-weight:bold; font-size:18px; color:#696969; text-align:center;}
+.sub_tab1 a.on{position:relative; padding:10px 0; background-color:#2d6497; border:1px solid #2d6497; color:#fff; z-index:1;}
+
+ul.tabmenu01{margin-bottom:60px;}
+ul.tabmenu01:after{display:block; content:""; clear:both;}
+ul.tabmenu01 li{float:left;}
+ul.tabmenu01 li a{display:block; margin-left:-1px; padding:10px 0; width:110px; border:1px solid #585858; font-family:"MalgunGothic"; font-weight:bold; font-size:18px; color:#696969; text-align:center;}
+ul.tabmenu01 li.on a{position:relative; padding:7px 0 10px 0; /*background-color:#2d6497;*/ border:1px solid #2d6497; border-bottom:4px solid #2d6497; color:#2d6497; z-index:1;}
+
+ul.tabmenu02{margin-bottom:60px;}
+ul.tabmenu02:after{display:block; content:""; clear:both;}
+ul.tabmenu02 li{float:left;}
+ul.tabmenu02 li a{display:block; margin-left:-1px; padding:10px 0; width:110px; border:1px solid #585858; font-family:"MalgunGothic"; font-weight:bold; font-size:16px; color:#696969; text-align:center;}
+ul.tabmenu02 li a.active{position:relative; background-color:#2d6497; border:1px solid #2d6497; color:#fff; z-index:1;}
+
+/* 퀵메뉴 */
+.quick_r{position:absolute; top:30px; right:-120px; background-color:#fff; border:1px solid #ddd; border-bottom:none; text-align:center;}
+.quick_r ul li{display:table; border-bottom:1px solid #ddd;}
+.quick_r ul li a{display:table-cell; width:88px; height:90px; vertical-align:middle;}
+.quick_r ul li a p{margin-bottom:7px;}
+.quick_r ul li a span{font-size:12px; font-weight:bold;}
+
+/* static */
+.mb01{margin-bottom:40px !important;}
+.mb02{margin-bottom:10px !important;}
+.mb03{margin-bottom:20px !important;}
+.mb04{margin-bottom:65px !important;}
+.mb05{margin-bottom:5px !important;}
+.mt01{margin-top:40px !important;}
+.mt02{margin-top:20px !important;}
+.mt03{margin-top:30px !important;}
+.mt04{margin-top:10px !important;}
+.mt08{margin-top:80px !important;}
+.mr01{margin-right:7px !important;}
+.mn{margin:0 !important;}
+.pd01{padding:60px 20px 65px !important;}
+.pdv01{padding:50px 0 !important;}
+.sub_contents h4{margin-bottom:24px; padding-left:12px; background:url(https://www.childsupport.or.kr/images/sub/s_dot01.gif) 0 3px no-repeat; font-family:"MalgunGothic"; font-weight:bold; font-size:18px;}
+.sub_contents h4.dot_none{margin-bottom:16px; padding:0; background:none; font-family:"MalgunGothic"; font-weight:bold; font-size:20px;}
+.sub_contents h4.dot_none2{margin-bottom:16px; padding:0; background:none; font-family:"MalgunGothic"; font-weight:bold; font-size:28px;}
+.sub_contents h4 span.sign1{margin-left:5px; font-size:18px; color:#c83e55;}
+.sub_contents .sec_p{padding-left:12px; margin-bottom:25px; font-size:14px; line-height:24px;}
+.sub_contents .sec_p2{font-size:14px; line-height:24px;}
+.sub_contents p.sign1{color:#c83e55; line-height:20px;}
+.sub_contents p.sign2{color:#000; line-height:20px;}
+.sub_contents p.sign2 b{color:#3180bd;}
+.sub_contents p.sign2 b.color1{color:#c83e55;}
+.sub_contents span.s_sign1{color:#c83e55; line-height:20px;}
+
+.section1{padding-left:12px;}
+.section1 > h5{margin-bottom:14px; font-family:"MalgunGothic"; font-weight:bold; font-size:16px; color:#3573aa;}
+.section1 > p{margin-bottom:25px; font-size:14px; line-height:24px;}
+.section1 > ul > li{margin-bottom:8px; padding-left:10px; background:url(https://www.childsupport.or.kr/images/sub/s_dot02.gif) 0 8px no-repeat; font-size:14px; line-height:20px;}
+.section1 > ul.type1 > li{margin-bottom:10px; padding-left:12px; background:url(https://www.childsupport.or.kr/images/sub/s_dot03.gif) 0 8px no-repeat; font-size:16px; line-height:23px; font-weight:bold;}
+.section1 > ul.type1 > li > ul{margin-top:7px;}
+.section1 > ul.type1 > li > ul > li{margin-bottom:4px; font-size:14px;}
+.section1 > ul.type1 > li > ul > li.color1{font-weight:bold; color:#3573aa;}
+.sec_img1{margin-bottom:70px; text-align:center;}
+.sec_img2 ul{overflow:hidden; margin-bottom:50px;}
+.sec_img2 ul li{float:left; margin:0 20px 20px 0;}
+.sec_img2 ul li.lst{margin-right:0;}
+
+.txt_box{overflow:hidden; padding:28px 22px 11px; border:1px solid #c4c4c4;}
+.txt_box .txt_group{float:left; width:429px;}
+.txt_box > ul{margin-right:30px; border-right:1px dotted #ddd;}
+.txt_box ul.lst{margin-right:0; border:none;}
+.txt_box ul > li{margin-bottom:17px; padding-left:12px; background:url(https://www.childsupport.or.kr/images/sub/s_dot03.gif) 0 8px no-repeat; font-size:14px; line-height:23px; font-weight:bold;}
+.txt_box ul > li > ul{margin-top:3px;}
+.txt_box ul > li > ul > li{padding:0; background:none;}
+.txt_box ul > li > ol{margin-top:7px;}
+.txt_box ul > li > ol > li{margin-bottom:4px; padding:0; background:none;}
+.txt_box ol > li{margin-bottom:17px; padding-left:12px; font-size:14px; line-height:23px;}
+.txt_box ol > li > ul{margin-top:5px;}
+.txt_box ol > li > ul > li{padding-left:15px; background:none;}
+.txt_box ol > li > ol{margin-top:10px}
+.txt_box ol > li > ol > li{padding-left:15px; margin-bottom:10px; background:none;}
+
+.txt_box p{margin-bottom:12px; font-size:14px; line-height:24px;}
+.txt_box p.tit{font-size:14px; font-weight:bold;}
+.txt_box p.d_tit{margin-bottom:22px; font-size:24px; font-family:"MalgunGothic"; font-weight:bold; color:#3280bd; line-height:34px;}
+.txt_box p.d_tit2{padding:10px 0 0 56px; margin-bottom:20px; height:35px; background:url(https://www.childsupport.or.kr/images/sub/sign_icon02.gif) 0 0 no-repeat; font-size:18px; font-family:"MalgunGothic"; font-weight:bold;}
+.txt_box p.bold{font-size:16px; font-weight:bold;}
+.txt_box p.bdb{padding-bottom:20px; border-bottom:1px dotted #ddd;}
+.txt_box p b.color1{color:#3280bd;}
+.txt_box p b.color2{color:#c83e55;}
+
+.txt_wrap{overflow:hidden;}
+.txt_box2{overflow:hidden; position:relative; margin-bottom:30px; background:#7f81aa;}
+.txt_box3{overflow:hidden; position:relative; margin-bottom:30px; background-color:#8a7aa6;} /* 박스 색2 */
+.txt_box4{overflow:hidden; position:relative; margin-bottom:30px; background-color:#9c7aa6;} /* 박스 색3 */
+.txt_box5{overflow:hidden; position:relative; margin-bottom:30px; background-color:#a67aa2;} /* 박스 색4 */
+.txt_tit{float:left; width:130px; font-family:"MalgunGothic"; font-weight:bold; font-size:16px; color:#fff; text-align:center; line-height:24px;}
+.txt_tit p{padding-top:50px;}
+.txt_tit p.tt2{padding-top:37px;}
+.txt_tit p.tt3{padding-top:27px;}
+.txt_list{overflow:hidden; display:table; float:right; padding:15px 20px 15px 20px; width:736px; min-height:90px; background:#fff url(https://www.childsupport.or.kr/images/sub/txtbox_arr01.gif) left top no-repeat; border:1px solid #c9c9c9; border-left:none;}
+.tl_dtn{display:block;}
+.tl_arr2{background:#fff url(https://www.childsupport.or.kr/images/sub/txtbox_arr02.gif) left top no-repeat;} /* 화살표 색2 */
+.tl_arr3{background:#fff url(https://www.childsupport.or.kr/images/sub/txtbox_arr03.gif) left top no-repeat;} /* 화살표 색3 */
+.tl_arr4{background:#fff url(https://www.childsupport.or.kr/images/sub/txtbox_arr04.gif) left top no-repeat;} /* 화살표 색4 */
+.txt_list p{padding-left:10px; margin-bottom:15px; background:none; font-weight:bold; font-size:14px; line-height:24px;}
+.txt_list p.sign_p1{padding-left:10px; margin-top:15px; font-weight:bold; font-size:14px; line-height:24px;}
+.txt_list ul{display:table-cell; padding-left:10px; vertical-align:middle;}
+.txt_list ul > li{margin-bottom:5px; padding-left:8px; background:url(https://www.childsupport.or.kr/images/sub/s_dot02.gif) 0 11px no-repeat; font-weight:bold; font-size:14px; line-height:24px;}
+.txt_list ul > li > ul{padding:0;}
+.txt_list ul > li > ul > li{padding:0; margin:5px 0 0 0; background:none; font-size:13px;}
+.txt_list ul.type2 > li{margin-bottom:5px; background:none; font-weight:bold; font-size:14px; line-height:24px;}
+.txt_list ul.type3{overflow:hidden;}
+.txt_list ul.type3 > li{float:left; width:48%;}
+.txt_list ul.type3 > li.w100{width:100%;}
+
+.pattern_box1{padding:30px 0; background:url(https://www.childsupport.or.kr/images/sub/pattern01.gif) repeat; border:1px solid #c4c4c4; text-align:center;}
+.pattern_box1 p{font-size:14px;}
+.pattern_box1 label{margin-right:30px;}
+
+.align{overflow:hidden;}
+.align .left{float:left;}
+.align .right{float:right;}
+
+.txt_center{text-align: center;}
+.m10{margin:10px 0 10px 0;}
+
+/* sub_style_1 */
+.mb1{margin-bottom:47px;}
+.sub_style_1{padding-left:12px; width:100%; table-layout:fixed; border-top:3px solid #4b5359; border-bottom:1px solid #4b5359; font-size:14px;}
+.sub_style_1 th{padding:18px 0; background-color:#f5f5f5; border-right:1px solid #d6d6d6; border-top:1px solid #d6d6d6;}
+.sub_style_1 th.lst{border-right:none;}
+.sub_style_1 th.bgn{background:none;}
+.sub_style_1 td{padding:18px 0; border-right:1px solid #d6d6d6; border-top:1px solid #d6d6d6; text-align:center; line-height:20px;}
+.sub_style_1 td.left{padding-left:15px; text-align:left; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.sub_style_1 td.bold{font-weight:bold;}
+.sub_style_1 td.fz{font-size:16px;}
+.sub_style_1 td.lst{border-right:none;}
+.sub_style_1 td.wb{word-break:break-word;}
+.sub_style_1 td.red{color:#c70000;}
+.sub_style_1 td .red{color:#c70000; vertical-align:text-bottom;}
+.sub_style_1 td a{font-weight:bold;}
+.sub_style_1 td p.dot01{padding-left:9px; background:url(https://www.childsupport.or.kr/images/sub/s_dot02.gif) 0 8px no-repeat; line-height:20px;}
+.sub_style_1 td ul li{margin-bottom:3px; padding-left:9px; background:url(https://www.childsupport.or.kr/images/sub/s_dot02.gif) 0 8px no-repeat; line-height:20px;}
+.sub_style_1 td ul.type2{overflow:hidden;}
+.sub_style_1 td ul.type2 li{float:left; padding:0; margin:5px 10px; width:105px; background:none; text-align:left;}
+.sub_style_1 td dl.subway{margin-bottom:20px;}
+.sub_style_1 td dl dt{margin-bottom:12px; font-weight:bold;}
+.sub_style_1 td dl dd{margin-bottom:11px;}
+.sub_style_1 td dl dd span{margin-right:10px;}
+
+/* static_list_style */
+.list_sec1 ul{overflow:hidden;} /* 화살표 들어간 list */
+.list_sec1 ul li{overflow:hidden; float:left; margin-right:40px; width:432px;}
+.list_sec1 ul li.lst{margin-right:0;}
+.list_sec1 ul li .ls_tit{display:table; float:left; padding-right:20px; width:130px; height:120px; background:#7f81aa url(https://www.childsupport.or.kr/images/sub/txtbox_arr01.gif) right center no-repeat; font-family:"MalgunGothic"; font-weight:bold; font-size:16px; color:#fff; text-align:center;}
+.list_sec1 ul li .ls_c1{background:#8a7aa6 url(https://www.childsupport.or.kr/images/sub/txtbox_arr02.gif) right center no-repeat;}
+.list_sec1 ul li .ls_tit p{display:table-cell; vertical-align:middle;}
+.list_sec1 ul li .ls_txt{display:table; float:left; padding:15px 0 15px 10px; width:272px; height:90px; border-top:1px solid #c9c9c9; border-bottom:1px solid #c9c9c9;}
+.list_sec1 ul li .ls_txt ul{display:table-cell; vertical-align:middle;}
+.list_sec1 ul li .ls_txt ul li{margin:0 0 6px 0; padding-left:9px; width:263px; background:url(https://www.childsupport.or.kr/images/sub/s_dot02.gif) 0 7px no-repeat; font-size:14px;}
+.list_sec1 ul li .ls_txt ul.w_ul li{margin:0 0 6px 0; padding-left:9px; width:120px; background:url(https://www.childsupport.or.kr/images/sub/s_dot02.gif) 0 7px no-repeat; font-size:14px;}
+.list_sec1 ul li .ls_txt ul li.w_li{width:260px; background:url(https://www.childsupport.or.kr/images/sub/s_dot02.gif) 0 8px no-repeat; line-height:20px; letter-spacing:-2px;}
+
+.list_sec2 ul li{overflow:hidden; margin-bottom:20px;} /* 동그라미 들어간 list */
+.list_sec2 ul li div.ls_tit{display:table; float:left; padding-right:45px; width:130px; height:130px; background:url(https://www.childsupport.or.kr/images/sub/circle_line.gif) 130px center no-repeat; }
+.list_sec2 ul li div.ls_tit p{display:table-cell; background:url(https://www.childsupport.or.kr/images/sub/circle.gif) 0 0 no-repeat; vertical-align:middle; font-family:"MalgunGothic"; font-weight:bold; font-size:18px; color:#fff; text-align:center; line-height:24px;}
+.list_sec2 ul li div.ls_txt{display:table; float:left; margin-top:21px; padding:20px 10px 13px 20px; width:700px; height:45px; border:1px solid #d6d6d6;}
+.list_sec2 ul li div.ls_txt ul{display:table-cell; vertical-align:middle;}
+.list_sec2 ul li div.ls_txt ul li{margin-bottom:7px; font-size:14px; line-height:20px;}
+
+.list_sec3 ul li{overflow:hidden; margin-bottom:20px; height:118px; border-top:1px solid #c9c9c9; border-bottom:1px solid #c9c9c9;} /* 비전 list */
+.list_sec3 ul li div.ls_tit{display:table; float:left; margin-right:30px; width:221px; height:120px; background:url(https://www.childsupport.or.kr/images/sub/list_sec3_bg1.gif) 0 0 no-repeat;}
+.list_sec3 ul li div.ls_c1{background:url(https://www.childsupport.or.kr/images/sub/list_sec3_bg2.gif) 0 0 no-repeat;}
+.list_sec3 ul li div.ls_c2{background:url(https://www.childsupport.or.kr/images/sub/list_sec3_bg3.gif) 0 0 no-repeat;}
+.list_sec3 ul li div.ls_c3{background:url(https://www.childsupport.or.kr/images/sub/list_sec3_bg4.gif) 0 0 no-repeat;}
+.list_sec3 ul li div.ls_tit p{display:table-cell; padding-left:30px; vertical-align:middle; font-family:"MalgunGothic"; font-weight:bold; font-size:18px; color:#fff;}
+.list_sec3 ul li div.ls_txt{display:table; float:left; height:118px;}
+.list_sec3 ul li div.ls_txt ul{display:table-cell; vertical-align:middle;}
+.list_sec3 ul li div.ls_txt ul li{margin:0 0 8px 0; padding-left:8px; height:auto; background:url(https://www.childsupport.or.kr/images/sub/s_dot02.gif) 0 7px no-repeat; border:none; font-size:14px;}
+
+/* 행사일정 */
+.calendar_wrap_01{position:relative; overflow:hidden; margin-bottom:40px; padding:26px 0; background-color:#f6f4f7; border-top:3px solid #4d5057; border-bottom:3px solid #4d5057;}
+.view_cal{float:right; margin-right:50px;}
+.current{position:absolute; top:36px; left:52px; font-size:14px; font-weight:bold;}
+.current strong{color:#4c87bb;}
+.cal_move{margin-left:150px; text-align:center;}
+.cal_move input[type="text"]{background:none; border:none; font-size:16px; font-family:"MalgunGothic"; font-weight:bold; text-align:center;}
+
+/* 자가진단 */
+.diagnosis{margin-bottom:30px; padding:36px 30px 30px 30px; background:#b2c7d0 url(https://www.childsupport.or.kr/images/sub/diagnosis_bg1.png) 0 0 no-repeat;}
+.d_bg2{background:#b2c7d0 url(https://www.childsupport.or.kr/images/sub/diagnosis_bg2.png) 0 0 no-repeat;}
+.d_bg3{background:#ddc9dd url(https://www.childsupport.or.kr/images/sub/diagnosis_bg3.png) 0 0 no-repeat;}
+.diagnosis_wrap{text-align:center;}
+.d_q{margin-bottom:40px;}
+.d_q p.d_q2{font-size:24px; font-family:"MalgunGothic"; font-weight:bold; color:#346492;}
+.d_q p span{padding-left:28px; background:url(https://www.childsupport.or.kr/images/sub/dq_icon.png) 0 0 no-repeat; font-size:20px; font-family:"MalgunGothic"; font-weight:bold; line-height:30px;}
+.d_chk{padding:40px 30px; width:799px; /*min-height:307px;*/ background-color:#fff; border-radius:8px;}
+.d_chk > ul{margin-bottom:35px;}
+.d_chk > ul > li{display:inline-block; padding:0 45px; border-right:1px dotted #ccc;}
+.d_chk > ul > li.lst{border:none;}
+.d_chk > ul > li p{margin-bottom:27px;}
+.d_chk > ul > li span{font-size:14px;}
+.d_chk > ul > li span label{margin-right:5px;}
+.d_chk2{padding:30px 30px; width:799px; background-color:#fff; border-radius:8px; text-align:left;}
+.d_chk2 p{margin-bottom:12px; font-size:14px; line-height:24px;}
+.d_chk2 p b.color1{color:#3280bd;}
+.d_chk2 ul li{margin-bottom:8px; padding-left:10px; background:url(https://www.childsupport.or.kr/images/sub/s_dot02.gif) 0 6px no-repeat;}
+.d_sign{text-align:left;}
+.d_sign > div{padding:18px 20px;}
+.ds_tit{border:1px solid #ccc;}
+.ds_tit p{margin:0; padding-left:28px; background:url(https://www.childsupport.or.kr/images/sub/d_sign_icon.gif) 0 0 no-repeat; font-size:16px; font-family:"MalgunGothic"; font-weight:bold; line-height:16px;}
+.ds_txt{border:1px solid #ccc; border-top:none; font-size:14px; font-weight:bold; line-height:20px;}
+.ds_txt p{padding-left:8px; background:url(https://www.childsupport.or.kr/images/sub/d_dot01.gif) 0 8px no-repeat;}
+.ds_txt p.sign1{background:none;}
+.ds_txt ul{margin:0; font-weight:bold;}
+.ds_txt ul li{display:block; margin:0 0 12px 0; padding:0 0 0 8px; background:url(https://www.childsupport.or.kr/images/sub/d_dot01.gif) 0 8px no-repeat;}
+.ds_txt ul li.lst{margin:0;}
+.ds_txt ul li ul li{padding:0; margin:5px 0 0; background:none;}
+
+/* 제출서류 */
+.doc_box1{margin-bottom:45px; padding:20px 87px 20px; border:1px solid #c4c4c4;}
+.doc_box2{margin-bottom:45px; padding:20px 0 20px 25px; border:1px solid #c4c4c4;}
+p.doc_tit{margin-bottom:20px; padding:20px 0 20px 70px; background:url(https://www.childsupport.or.kr/images/sub/doc_icon.gif) 0 0 no-repeat; font-size:18px; font-family:"MalgunGothic"; font-weight:bold;}
+ul.doc1{overflow:hidden;}
+ul.doc1 > li{display:table; float:left; margin:0 4px 20px 6px; width:353px; height:73px; background-color:#f7f7f7; border:1px solid #dfdfdf; font-size:14px; text-align:center;}
+ul.doc1 > li.corner1{background:#f7f7f7 url(https://www.childsupport.or.kr/images/sub/corner01.png) right top no-repeat;}
+ul.doc1 > li.corner2{background:#f7f7f7 url(https://www.childsupport.or.kr/images/sub/corner02.png) right top no-repeat;}
+ul.doc1 > li.corner3{background:#f7f7f7 url(https://www.childsupport.or.kr/images/sub/corner03.png) right top no-repeat;}
+ul.doc1 > li.w_1{width:169px;}
+ul.doc1 > li.w100{width:718px; height:auto; padding:20px 0;}
+ul.doc1 > li.w100 p{display:block;}
+ul.doc1 > li.w100 ol{margin-top:8px;}
+ul.doc1 > li.w100 ol li{margin-top:5px;}
+ul.doc1 > li.w100 ol li:first-child{margin-top:0;}
+ul.doc1 > li p{display:table-cell; vertical-align:middle;}
+ul.doc1 > li span{display:block; margin-bottom:5px; font-weight:bold;}
+
+ul.doc2{text-align:center;}
+ul.doc2:after{content:""; display:block; clear:both;}
+ul.doc2 li{float:left; margin:0 5px; padding:28px 0; width:169px; background-color:#f7f7f7; border:1px solid #dfdfdf; font-weight:bold; font-size:14px;}
+ul.doc2 li.auto{float:inherit; width:auto;}
+
+ul.doc3 li{overflow:hidden; margin-bottom:20px;}
+ul.doc3 > li .doc_tit{display:table; padding-right:20px; float:left; width:187px; height:75px; background:#7f81aa url(https://www.childsupport.or.kr/images/sub/txtbox_arr01.gif) right 50% no-repeat;}
+ul.doc3 > li .tl_arr2{background:#8a7aa6 url(https://www.childsupport.or.kr/images/sub/txtbox_arr02.gif) right 50% no-repeat;}
+ul.doc3 > li .tl_arr3{background:#9c7aa6 url(https://www.childsupport.or.kr/images/sub/txtbox_arr03.gif) right 50% no-repeat;}
+ul.doc3 > li .tl_arr4{background:#a67aa2 url(https://www.childsupport.or.kr/images/sub/txtbox_arr04.gif) right 50% no-repeat;}
+ul.doc3 > li .doc_tit p{display:table-cell; vertical-align:middle; font-family:"MalgunGothic"; font-weight:bold; font-size:16px; color:#fff; text-align:center;}
+ul.doc3 > li .doc_txt{float:left; width:666px;}
+ul.doc3 > li > .doc_txt > ul{overflow:hidden;}
+ul.doc3 > li > .doc_txt > ul > li{display:table; float:left; margin-right:20px; width:311px; height:73px; background-color:#f7f7f7; border:1px solid #dfdfdf; text-align:center;}
+ul.doc3 > li > .doc_txt > ul > li.corner1{margin-right:20px; background:#f7f7f7 url(https://www.childsupport.or.kr/images/sub/corner02.png) right top no-repeat;}
+ul.doc3 > li > .doc_txt > ul > li.corner2{background:#f7f7f7 url(https://www.childsupport.or.kr/images/sub/corner03.png) right top no-repeat;}
+ul.doc3 > li > .doc_txt > ul > li p{display:table-cell; vertical-align:middle;}
+ul.doc3 > li > .doc_txt > ul > li span{display:block; margin-bottom:5px; font-weight:bold;}
+ul.doc3 > li > .doc_txt > ul > li.w100{width:646px; height:auto; padding:20px 0;}
+ul.doc3 > li > .doc_txt > ul > li.w100 p{display:block;}
+ul.doc3 > li > .doc_txt > ul > li.w100 > ol{margin-top:8px;}
+ul.doc3 > li > .doc_txt > ul > li.w100 > ol > li{margin-top:5px; margin-bottom:0;}
+ul.doc3 > li > .doc_txt > ul > li:first-child{margin-top:0;}
+
+/* 양육비 이행확보 지원신청 */
+.step{margin-bottom:40px;}
+.intro_wrap{padding:20px 30px; border:1px solid #c4c4c4;}
+.intro_wrap h4{margin-bottom:17px; padding:12px 0 0 54px; height:33px; background:url(https://www.childsupport.or.kr/images/sub/sign_icon.gif) 0 0 no-repeat; font-family:"MalgunGothic"; font-weight:bold; font-size:18px;}
+.intro_wrap h4.online{background:url(https://www.childsupport.or.kr/images/sub/online_icon.gif) 0 0 no-repeat;}
+.intro_wrap h4.post{background:url(https://www.childsupport.or.kr/images/sub/post_icon.gif) 0 0 no-repeat;}
+.intro_wrap h5{margin-bottom:12px; font-family:"MalgunGothic"; font-weight:bold; font-size:16px; color:#3180bd;}
+.intro_wrap p{font-size:14px;}
+.intro_wrap ul li{margin-bottom:8px; padding-left:8px; background:url(https://www.childsupport.or.kr/images/sub/s_dot05.gif) 0 8px no-repeat; font-weight:bold; font-size:14px; line-height:20px;}
+.intro_wrap ul li ul{margin:10px 0;}
+.intro_wrap ul li ul li{margin-bottom:4px; background:none;}
+					
+.agree_all{margin:33px 0 19px; padding:20px 0; border:1px solid #c4c4c4; text-align:center;}
+.agree_all p{font-family:"MalgunGothic"; font-weight:bold; font-size:16px; color:#2e6ca6;}
+.agree_all p input{width:13px; height:13px;}
+.agree_all p label{margin-left:5px;}
+
+.agree_box{padding:30px; margin-bottom:20px; border:1px solid #dfdfdf;}
+.agree_txt{overflow-y:scroll; padding:20px 20px 15px; margin-bottom:10px; height:157px; border:1px solid #dfdfdf;}
+.agree_txt p{line-height:20px; font-weight:bold;}
+.agree_txt p.a_tit1{margin:25px 0 10px; font-weight:bold;}
+.agree_txt p.a_txt1{margin-bottom:15px;}
+.agree_txt ol li{margin-bottom:8px; line-height:20px; font-weight:bold;}
+.agree_txt ol li span{font-size:15px; text-decoration:underline;}
+.agree_txt ol li ol{margin:5px 0 10px;}
+.agree_txt ol li ol li{padding-left:18px;}
+.agree_txt ol li ul{margin:5px 0 10px;}
+.agree_txt ol li ul li{padding-left:18px;}
+/*회원가입 스크롤항목 start*/
+.agree_txt_sub{overflow-y:scroll; padding:20px 20px 15px; margin-bottom:10px; height:157px; border:1px solid #dfdfdf;}
+.agree_txt_sub p{line-height:20px; font-weight:bold;}
+.agree_txt_sub p.a_tit1{margin:25px 0 10px; font-weight:bold;}
+.agree_txt_sub p.a_txt1{margin-bottom:15px;}
+.agree_txt_sub ol li{margin-bottom:8px; line-height:20px; font-weight:bold;}
+.agree_txt_sub ol li span{font-size:15px; text-decoration:underline;}
+.agree_txt_sub ol li ol{margin:5px 0 10px;}
+.agree_txt_sub ol li ol li{padding-left:18px;}
+.agree_txt_sub ol li ul{margin:5px 0 10px;}
+.agree_txt_sub ol li ul li{padding-left:18px;}
+/*회원가입 스크롤항목 end*/
+.agree_chk{text-align:right;}
+.agree_chk span{margin-left:10px;}
+.agree_chk span label{margin-left:5px;}
+.remove1{overflow:visible; height:auto;}
+
+.doc_sign{padding:20px; border-top:2px solid #585858; border-bottom:2px solid #585858;}
+.doc_sign ul{margin-bottom:20px;}
+.doc_sign ul > li{margin-bottom:8px; font-weight:bold; line-height:20px; letter-spacing:-1px;}
+.doc_sign ul > li > b{color:#c83e55;}
+.doc_link ul{overflow:hidden;}
+.doc_link ul > li{float:left; margin:0 8px; /* background:url(https://www.childsupport.or.kr/images/sub/arr_bg.gif) center 200px no-repeat; */}
+.doc_link ul > li > p > a > span{display:none;}
+.doc_link ul > li > div{margin-top:10px; padding:16px 5px 16px 11px; width:185px; min-height:100px; border: 1px solid #c9c9c9;}
+.doc_link ul > li > div > ul > li{float:none; margin-bottom:5px; font-size:14px; letter-spacing:-1px;}
+
+/* 인사말 */
+.ceo{margin-bottom:52px;}
+.greeting p.bold{font-family:"MalgunGothic"; font-weight:bold;}
+.greeting p{margin-bottom:27px;font-size:14px; line-height:30px;}
+.greeting ul{margin-bottom:27px;}
+.greeting ul li{margin-bottom:10px; padding-left:10px; background:url(https://www.childsupport.or.kr/images/sub/greet_dot.gif) 0 5px no-repeat; font-weight:bold;}
+
+/* 연혁 */
+.history{background:url(https://www.childsupport.or.kr/images/sub/history_bg1.gif) 0 0 no-repeat;}
+.history_wrap{position:relative; margin:0 auto; width:522px; height:1664px; background:url(https://www.childsupport.or.kr/images/sub/history_bg2.gif) 0 0 no-repeat;}
+.history_wrap div{position:absolute;}
+.history_wrap div h4{margin:0; padding:0; background:none; font-family:"MalgunGothic"; font-weight:bold; font-size:32px; color:#fff;}
+.history_wrap div dl{margin:67px 0 0 72px;}
+.history_wrap div.history2 dl,
+.history_wrap div.history4 dl{margin:67px 72px 0 0;}
+.history_wrap div dl dt{margin-bottom:10px; font-family:"MalgunGothic"; font-weight:bold; font-size:18px;}
+.history_wrap div dl dd{margin-bottom:10px; font-size:14px; line-height:20px;}
+.history_wrap div dl dd span{display:block;}
+.history1{top:385px; left:186px;}
+.history2{bottom:850px; right:262px; text-align:right;}
+.history3{bottom:615px; left:186px;}
+.history4{bottom:379px; right:262px; text-align:right;}
+.history5{bottom:-7px; left:186px;}
+
+/* 조직도 */
+.org{position:relative; margin:0 auto; width:916px; height:920px; background:url(https://www.childsupport.or.kr/images/sub/org_bg.gif) no-repeat 0 0; letter-spacing:-1px; display:block; font-weight:bold; text-align:center;}
+.org h1{position:absolute; top:0; left:354px; margin:0; font-size:20px; padding:30px 0; width:226px; background-color:#246a9b; font-family:"MalgunGothic"; font-weight:bold; font-size:20px; color:#fff;}
+.org h1 span{display:block; font-size:17px; font-family:"MalgunGothic";}
+.org h2{position:absolute; display:block; padding:17px 0; width:108px; background-color:#5f7281; text-align:center; color:#fff; font-size:17px;}
+.org h2.org2_1{top:15px; right:184px; padding:27px 0;}
+.org h2.org2_2{top:15px; right:56px;}
+.org h2 span{display:block; margin-top:3px; font-size:15px;}
+.org h3{position:absolute; font-size:17px; color:#fff;}
+.org h3.org3_1{top:154px; right:56px; padding:27px 0; width:236px; background-color:#99994c;}
+.org h3.org3_2{top:543px; right:4px; padding:27px 0; width:352px; background-color:#b46ea1;}
+
+.department{position:absolute; top:402px; left:5px;}
+.department.d1{top:194px; left:74px;}
+.department.d1 h4{width:236px; height:20px; margin:0 0 10px 0; padding: 27px 0; background-color:#608060; border:none; font-size:16px; font-weight:bold; color:#fff;}
+.department.d1 > ul > li > ul > li{width:auto; border:1px solid #d5d5d5;}
+.department.d2{top:668px}
+.department h4{display:block; width:165px; margin:0 0 16px 0; padding:16px 0; background:#f4f9fc; border:1px solid #d3e1e8; color:#494949; font-size:16px;}
+.department h4.childsupport{background-color:#fcf4fa; border:1px solid #f1d9ea;}
+.department > ul{overflow:hidden;}
+.department > ul > li{float:left; margin-right:18px;}
+.department > ul > li:last-child{margin-right:0;}
+.department > ul > li > ul{margin:0;}
+.department > ul > li > ul > li{float:none; margin:0; display:block; margin-bottom:10px; padding:17px 0; width:165px; border:1px solid #d5d5d5; background-color:#fff; color:#444; font-size:14px;}
+
+/* 만족도 조사 */
+#evaluation {border:1px solid #e8e8e8; font-size:12px; position:relative; margin:80px 0 90px 0;}
+#evaluation .rep {border-bottom: 1px solid #e8e8e8; padding:12px 0 11px 15px; background:#fcfcfc; min-height:14px; height:auto;}
+#evaluation .rep span {display:none;}
+#evaluation .rep ul {overflow:hidden; margin:4px 0; height:14px;}
+#evaluation .rep ul li {float:left; padding:0px 15px 0 0;}
+#evaluation .rep ul li.e_list1{width:125px;}
+#evaluation .rep ul li.e_list2{width:150px;}
+#evaluation .rep ul li.e_list3{width:85px;}
+#evaluation .eval_chk{padding:10px 15px 10px 15px;}
+#evaluation .txt_serach {overflow:hidden; margin-bottom: 15px;}
+#evaluation .txt_serach strong.num {color:#53799C;}
+#evaluation .txt_serach p {float:left;}
+#evaluation .txt_serach span {float:right; font-size:11px;}
+#evaluation .gtb{overflow:hidden;}
+#evaluation .gtb ul {float:left; padding-top:3px;}
+#evaluation .gtb ul li {float:left; padding:0 20px 0 0px; }
+#evaluation .gtb ul li label input{vertical-align:middle; margin:-2px 0 0 0;}
+#evaluation .gtb ul li img {vertical-align:middle; margin:-1px 0 0 0; padding:0 0 0 4px;}
+#evaluation .gtb a{float:left; padding:3px 10px; background-color:#53799c; text-align: center; color:#fff;}
+
+/* 회원가입, 로그인 */
+.login_wrap{overflow:hidden; border:1px solid #c4c4c4;}
+.login{float:left; width:468px; height:453px; border-right:1px solid #dfdfdf;}
+.l_insert{font-size:14px; text-align:center;}
+.l_login{margin-top:61px; padding-top:142px; background:url(https://www.childsupport.or.kr/images/sub/login_icon.gif) center 0 no-repeat;}
+.l_insert p{margin-bottom:20px;}
+.l_insert label{display:inline-block; width:70px; text-align:left;}
+.l_insert label.wl{width:100px;}
+
+.join_option{float:left; padding:60px 60px 0; width:328px; height:393px; background:url(https://www.childsupport.or.kr/images/sub/pattern01.gif) repeat;}
+.join_option div{margin-bottom:36px;}
+.join_option div p{margin-bottom:17px; font-size:14px; line-height:22px;}
+.join_option div p.j_tit{margin-bottom:15px; font-family:"MalgunGothic"; font-weight:bold;font-size:16px; color:#5695c6;}
+.join_option div p.j_tit span{padding-left:34px; background:url(https://www.childsupport.or.kr/images/sub/join_icon.png) 0 0 no-repeat;}
+.join_option div p.idpw_tit{margin-bottom:15px; font-family:"MalgunGothic"; font-weight:bold; font-size:16px; color:#5695c6; text-align:left;}
+.join_option div p.idpw_tit span{padding-left:22px; background:url(https://www.childsupport.or.kr/images/sub/idpw_sch_icon.png) 0 0 no-repeat;}
+
+/* 아이디, 비밀번호 인증 및 찾기 */
+.cert{overflow:hidden; position:relative; margin-bottom:40px; padding:40px 40px 40px 160px; background:url(https://www.childsupport.or.kr/images/sub/cert_sms.png) no-repeat 40px 40px #f5f5f5;}
+.cert .txt{float:left;}
+.cert .txt .tit{font-weight:bold; color:#444; font-size:18px; letter-spacing:-0.045em;}
+.cert .txt span{display:block; margin-top:10px; color:#666; line-height:22px;}
+.cert .btn{float:right; margin:20px 0;}
+.cert .btn a{display:block; padding:11px 0; width:120px; background:#666; font-weight:bold; text-align:center; color:#fff; font-size:15px;}
+
+p.idpw_tit{margin:0; font-family:"MalgunGothic"; font-weight:bold; font-size:18px; text-align:center;}
+p.idpw_tit b{color:#3180bd;}
+
+
+/* 개인정보처리방침, 이메일무단수집거부 */
+.sign_box1{padding:34px 100px 34px 40px; border:1px solid #c4c4c4;}
+.sign_box1 div.policy{padding:20px 0 0 176px; height:120px; background:url(https://www.childsupport.or.kr/images/sub/policy_icon.gif) 0 center no-repeat;}
+.sign_box1 div.email{padding-left:176px; height:auto; background:url(https://www.childsupport.or.kr/images/sub/email_icon.gif) 0 center no-repeat;}
+.sign_box1 p{margin-bottom:18px; font-size:14px; line-height:22px;}
+.sign_box1 p.bold{ font-family:"MalgunGothic"; font-weight:bold;}
+.sign_box1 ol li{margin-bottom:8px; font-size:14px; line-height:22px;}
+
+/* 사이트맵 */
+.sitemap ol{overflow:hidden;}
+.sitemap ol > li{float:left; margin:7px 18px; height:430px;}
+.sitemap ol > li.lst{margin-right:0;}
+.sitemap ol > li > a{display:inline-block; padding:0 0 20px 10px; width:259px;  background:none; border-bottom:2px solid #5f7281; font-size:20px; font-family:"MalgunGothic"; font-weight:bold;}
+.sitemap ol > li > ol{margin-top:14px;}
+.sitemap ol > li > ol > li{float:none; margin:0 0 12px 0; padding-left:2px; width:auto; height:auto; background:none; font-size:13px;}
+.sitemap ol > li > ol > li > a{padding:0 0 0 20px; width:auto; background:url(https://www.childsupport.or.kr/images/sub/s_dot06.gif) 10px 7px no-repeat; border:none; font-weight:bold; font-size:14px;}
+
+/* 팝업 */
+.pop_wrap3 h4{margin-bottom:10px; padding-left:12px; background:url(https://www.childsupport.or.kr/images/sub/s_dot01.gif) 0 3px no-repeat; font-family:"MalgunGothic"; font-weight:bold; font-size:16px;}
+.popup_wrap{padding:10px; width:380px; border:1px solid #ddd;}
+.popup_wrap p.popup_bold{margin-bottom:10px; font-weight:bold; line-height:20px;}
+.popup_wrap ol{border-top:1px dotted #ddd;}
+.popup_wrap ol li{margin-bottom:10px; padding:5px 0 16px 0; border-bottom:1px dotted #ddd; line-height:20px;}
+
+/* btn_type */
+.btn_type1{margin-top:20px;} /* css용 */
+.btn_type1 .right{text-align:right;}
+.btn_type1 .left{text-align:left;}
+.btn_type1 .center{text-align:center;}
+.btn_type1 a{display:inline-block; padding:6px 0 5px 0; width:63px; background-color:#4b5359; border: 1px solid #4b5359; font-weight:bold; color:#fff; text-align:center;}
+.btn_type1 a.type1{background-color:#fff; border: 1px solid #4b5359; color:#4b5359;}
+.btn_type1 a.w_type1{width:120px;}
+.btn_type1 a.w_type2{display:inline-block; padding:9px 0 8px 0; width:180px; height:15px; background-color:#4b5359; border: 1px solid #4b5359; font-weight:bold; color:#fff; text-align:center;}
+a.dwn{display:inline-block; height:16px; padding:7px 10px; background-color:#4c87bb; font-size:13px; font-weight:bold; color:#fff;}
+a.dwn span{padding-right:22px; background:url(https://www.childsupport.or.kr/images/sub/dwn_ico.png) right 0 no-repeat;}
+
+.btn_type2{margin-top:40px;} /* 이미지용 */
+.btn_type2 .right{text-align:right;}
+.btn_type2 .left{text-align:left;}
+.btn_type2 .center{text-align:center;}
+.btn_type2 a{margin-right:12px;}
+.btn_type2 a.type1{display:inline-block; padding:9px 0 8px 0; width:63px; height:15px; background-color:#4b5359; border: 1px solid #4b5359; font-weight:bold; color:#fff; text-align:center;}
+.btn_type2 .right a{margin:0 0 0 12px;}
+.btn_type2 input{margin-right:12px;}
+.btn_type2 .none{display:none;}
+
+.corny-alert-box{font-size: 1rem; color:red;}
+
+@media only screen and (max-width: 1100px) {
+	.h_logo{float:none; padding-top:25px; margin:0; text-align:left;padding-left:15px;}
+	.side_menu{right:15px;top:30px; }
+}
+@media only screen and (max-width:768px) {
+
+	.corny-alert-box{display: none;}
+	
+	/* header*/
+	#header{height:auto; background:none; border-top:5px solid #6b8aa6;}
+	.h_wrap{position:relative; margin:0 auto; width:auto;}
+	.h_logo{float:none; padding-top:21px; margin:0; }
+	.h_logo h1{float:none;}
+	.main_tit{display:none;}
+	.utill_wrap{position:static; padding:10px 2%; margin-top:20px; border-bottom:1px solid #ccc; background:#e5e5e5;}
+	.utill{display:none;}
+	.utill_wrap:before,
+	.utill_wrap:after{content:"";display: table;clear: both;}/*260325*/
+	
+
+	
+	#header{height:auto;}
+	.h_wrap{width:auto;}
+	.utill_wrap{padding:10px 2%; margin-top:20px; border-bottom:1px solid #ccc; background:#e5e5e5;}
+	
+	.search{float:none; position:relative;}
+	.search input[type="text"]{width:100%; height:39px; border:1px solid #888; box-sizing:border-box;}
+	.search input[type="image"]{position:absolute; top:0; right:0;}
+	
+	.m_header_on {height:140px !important;}
+	
+	.lnb{display:none;}
+	
+	.kihf{display:none;}
+
+	.side_menu{display:block; position:absolute; }
+	.m_option{overflow:hidden; display:block; position:absolute; top:32px; left:2%;}
+	.m_option a{float:left;}
+	
+	.quick_r{display:none;}
+	
+	/* sub */
+	.contents{width:auto; background-color:#fff;}
+	#left_menu{display:none;}
+	#sub{float:none; padding:17px 2% 0; width:auto; border:none;}
+	.strapline{position:relative;}
+	.strapline h3{float:none; margin:0 0 20px; font-size:28px;}
+	.sub_option{float:none;}
+	.nav{margin-bottom:0;}
+	.etc{float:none; position:absolute; top:0; right:0;}
+	.etc #print{display:none;}
+	
+	.sub_contents h4.dot_none{font-size:16px;}
+	.sub_contents h4.dot_none2{font-size:16px;}
+	
+	.sub_contents .intro_wrap{display: none;}
+	
+	.section1{padding:0;}
+	.section1 p img{width:100% !important; height:auto !important;}
+	.sec_img1 img{width:100% !important; height:auto !important;}
+	
+	.sub_style_1 td{padding:18px 10px; word-break:break-all;}
+	.sub_style_1 td.left{text-overflow:initial; white-space:normal; overflow:visible;}
+	.sub_style_1 td.wb{font-size:13px;}
+	.sub_style_1 td.f_img img{width:100%;}
+	.sub_style_1 td dl dd{padding-bottom:8px; border-bottom:1px dotted #ddd; line-height:20px;}
+	.sub_style_1 td dl dd span{display:block; margin-bottom:8px;}
+	
+	/* 양육비 이행확보 지원 */
+	.sec_img2 ul li{margin:0 2% 3% 2%; width:29%;}
+	.sec_img2 ul li.lst{margin:0 2% 3% 2%;}
+	.sec_img2 ul li img{width:100%;}
+	
+	.d_chk{width:auto;}
+	.d_chk ul li{padding:0 20px;}
+	.d_chk ul li.ptb{padding:25px 15px;}	
+	.d_chk ul li p img{width:70px;}
+	.ds_txt ul li{padding:0 0 0 8px;}
+	.d_chk2{padding:20px; width:auto;}
+	
+	.doc_box1{padding:20px;}
+	ul.doc1 > li{margin:0 2% 20px 0; width:48.5%; font-size:13px;}
+	ul.doc1 > li.lst{margin-right:0;}
+	ul.doc1 > li.w_1{width:23.4%;}
+	ul.doc1 > li.w100{width:100%; padding:20px 10px; box-sizing:border-box;}
+	
+	ul.doc2 li{float:none; display:inline-block; width:20%; font-size:13px;}
+	  
+	.doc_box2{padding:20px;}
+	ul.doc3 li .doc_tit{display:block; float:none; padding:10px 0; margin-bottom:10px; width:auto; height:auto; background:#7f81aa; text-align:center;}
+	ul.doc3 li .tl_arr2{background:#8a7aa6;}
+	ul.doc3 li .tl_arr3{background:#9c7aa6;}
+	ul.doc3 li .tl_arr4{background:#a67aa2;}
+	ul.doc3 li .doc_tit p{display:block;}
+	ul.doc3 li .doc_txt{float:none; width:auto;}
+	ul.doc3 li .doc_txt ul li{margin-right:2%; width:48.5%;}
+	ul.doc3 li .doc_txt ul li.corner1{margin-right:2%;}
+	ul.doc3 li .doc_txt ul li.lst{margin-right:0;}
+	ul.doc3 li .doc_txt ul li:last-child{margin-right:0;}
+	ul.doc3 > li > .doc_txt > ul > li.w100{width:100%; box-sizing:border-box;}
+	ul.doc3 > li > .doc_txt > ul > li.w100 > ol > li{width:auto; margin-right:0;}
+	
+	.list_sec1 ul li{float:none; margin:0 0 10px; width:auto;}
+	.list_sec1 ul li .ls_txt{display:block; float:none; width:auto; height:88px;}
+	.list_sec1 ul li .ls_txt ul li{float:left; margin:0 15px 15px 0; width:auto;}
+	.list_sec1 ul li .ls_txt ul.w_ul li{width:110px; margin:0 15px 15px 0;}
+	.list_sec1 ul li .ls_txt ul li.w_li{width:auto; overflow:visible;}
+	
+	.list_sec2 ul li div.ls_txt{float:none; display:block; margin-left:174px; width:auto; height:auto; min-height:45px;}
+	
+	.txt_tit{width:100px; font-size:14px;}
+	.txt_list{display:block; float:none; width:auto;}
+	.txt_list ul.type3 > li{float:none; width:auto;}
+	
+	.txt_box .txt_group{width:auto;}
+	
+	.doc_link ul{margin-bottom:0;}
+	.doc_link ul > li{float:none; margin:0 9px 15px 0;}
+	.doc_link ul > li > p > a > img{display:none;}
+	.doc_link ul > li > p > a > span{display:block; padding:8px 0; text-align:center; color:#fff;}
+	.doc_link ul > li > p > a > span.doc_btn1{background-color:#6d7e8d;}
+	.doc_link ul > li > p > a > span.doc_btn2{background-color:#4c87bb;}
+	.doc_link ul > li > p > a > span.doc_btn3{background-color:#1c4c77;}
+	.doc_link ul > li > p > a > span.doc_btn4{background-color:#6d8fad;}
+	.doc_link ul > li > div{width:auto; height:auto; min-height:auto;}
+	.doc_link ul > li > div > ul > li{float:left; margin:0 20px 5px 0; width:170px;}
+	
+	/* CSA소개 */
+	.greeting p img{width:100%;}
+	
+	.history{background:none;}
+	.history_wrap{width:453px; height:1913px; background:url(https://www.childsupport.or.kr/images/sub/m_history_bg2.gif) center 0 no-repeat;}
+	.history1{top:31px; left:187px;}
+	.history2{top:288px; right:192px;}
+	.history3{bottom:634px; left:187px;}
+	.history4{bottom:419px; right:192px;}
+	.history5{bottom:-27px; left:187px;}
+	.history_wrap div dl dd{font-size:13px;}
+	
+	.list_sec3 ul li{border-top:none;}
+	.list_sec3 ul li div.ls_tit{display:block; float:none; margin:0; width:auto; height:auto; background:#7f81aa; text-align:center;}
+	.list_sec3 ul li div.ls_c1{background-color:#8a7aa6;}
+	.list_sec3 ul li div.ls_c2{background-color:#9c7aa6;}
+	.list_sec3 ul li div.ls_c3{background-color:#a67aa2;}
+	.list_sec3 ul li div.ls_tit p{display:block; padding:10px 0;}
+	.list_sec3 ul li{height:auto;}
+	.list_sec3 ul li div.ls_txt{display:block; float:none; padding:10px 10px 2px; height:auto;}
+	.list_sec3 ul li div.ls_txt ul{display:block;}
+	.list_sec3 ul li div.ls_txt ul li{line-height:20px;}
+	
+	.org{width:300px; height:1913px; background:url(https://www.childsupport.or.kr/images/sub/m_org_bg.gif) 0 0 no-repeat;}
+	.org h1{top:0; left:10px; width:280px; padding:28px 0;}
+	.org h2.org2_1{top:113px; left:41px; }
+	.org h2.org2_2{top:113px; right:10px; }
+	.org h3.org3_1{width:249px; top:216px; right:inherit; left:41px;}
+	.org h3.org3_2{width:249px; top:592px; left:41px;}
+
+	.department.d1{top:314px; left:41px;}
+	.department.d2{top:690px; left:72px;}
+	.department h4{margin-bottom:12px; width:213px;}
+	.department.d1 h4{width:249px;}
+	.department h4.org_m1{margin-top:20px;}
+	.department h4.org_m2{margin-top:30px;}
+	.department h4.org_m3{margin-top:18px;}
+	.department h4.org_m4{margin-top:18px;}	
+	.department > ul > li{margin-right:0;}
+	.department > ul > li{margin-bottom:24px;}
+	.department > ul > li:last-child{margin-bottom:0;}
+	.department > ul > li > ul > li{margin-bottom:6px; width:213px;}
+	.department > ul > li > ul > li:last-child{margin-bottom:0;}
+	
+	/* 오시는 길 */
+	.root_daum_roughmap{width:100% !important; height:auto !important; padding:0 !important;}
+	
+	/* 소통,참여 */
+	.pdv01{padding:50px 2% !important;}
+	#calendar{width:100% !important;}
+	.calendar_wrap_01{padding:26px 0 70px 0; text-align:center;}
+	.view_cal{float:none; margin:0 0 0 -63px; position:absolute; left:50%; bottom:10px;}
+	.cal_move{margin:0 0 20px 0;}
+	.current{position:static;}
+	
+	/* 사이트정보 */
+	.sign_box1{padding:34px 10px 34px 40px;}
+	.sign_box1 div.policy{height:auto;}
+	
+	.sitemap ol > li{width:45%; margin:7px 2%;}
+	.sitemap ol > li > a{display:block; width:auto; font-size:18px;}
+	
+	/* 회원관련 */
+	.step img{width:100%;}
+	.cert{text-align:center; padding:120px 12px 20px 12px; background-position:50% 20px !important;}
+	.cert .txt{float:none;}
+	.cert .txt span br{display:none;}
+	.cert .btn{float:none;}
+	.cert .btn a{display:inline-block;}
+	
+	
+	.login_wrap{overflow:visible; border:none;}
+	.login{float:none; padding-bottom:20px; width:100%; height:auto; border:1px solid #dfdfdf;}
+	.join_option{float:none; padding:20px 0; width:100%; height:auto; border:1px solid #dfdfdf; border-top:none; text-align:center;}
+	.join_option div{margin:20px 10px;}
+	.join_option div p.idpw_tit{text-align:center;}
+	
+	.agree_box{padding:15px;}
+	
+	/* tab */
+	ul.tabmenu02 li{width:20%;}
+	ul.tabmenu02 li a{width:100%; font-size:14px;}
+	
+	.sub_tab ul li{width:25%;}
+	.sub_tab ul li a{width:100%; font-size:14px;}
+	.sub_tab1 a{width:33%; font-size:14px;}
+	
+	.ui-dialog{left:0 !important; width:100% !important;}
+	
+	
+	/* 만족도조사 */
+	#evaluation .gtb ul li{padding:0 20px 7px 0;}	
+	#evaluation .gtb a{padding:5px 0; width:100%; text-align: center; color:#fff;}
+
+	/* footer */
+	#footer{padding:0 2%; height:auto; background:#e5e5e5;}
+	.f_utill_wrap{height:auto; border-bottom:none;}
+	.f_utill{text-align:center; padding:0; width:auto;}
+	.f_sns{display:none;}
+	.m_f_sns{display:block; overflow:hidden; margin:0 auto; width:310px;}
+	.m_f_sns .select_box{display:block; float:left; text-align:center;}
+	.m_f_sns .select_box select{width:150px; height:29px; color:#444; background:#ddd; border:1px solid #c5c5c5; box-sizing:border-box;}
+	.m_f_sns a{display:inline-block; float:left; margin-left:10px; text-align:center; padding:6px 0; width:70px; color:#444; background:#ddd; border:1px solid #c5c5c5; box-sizing:border-box;}
+	.f_menu{display:inline-block; float:none; margin-top:15px;}
+	.f_menu ul li.lst{display:none;}
+	.f_menu li a{color:#888; font-size:12px;}
+	.f_infor{float:none; text-align:center; padding-bottom:30px; margin-top:0; width:auto;}
+	.f_infor p{margin-bottom:0; color:#888; font-size:12px; line-height:18px;}
+	.f_infor p.copy{margin-top:0;}
+	
+	.f_wrap{width:auto;}
+	.f_logo{display:none;}
+	.f_mark{display:none;}
+	.t_hide{display:none;}
+
+}
+
+@media only screen and (max-width:580px) {
+	
+	ul.doc1{overflow:visible;}
+	ul.doc1 li{float:none; margin:0 0 5px 0; width:100%;}
+	ul.doc1 li.w_1{width:100%;}
+	
+	ul.doc3 li .doc_txt ul li{display:block; float:none; padding:10px; margin:0 0 5px 0; width:auto; height:auto; text-align:center;}
+	ul.doc3 li .doc_txt ul li.corner1{margin-right:0;}
+	ul.doc3 li .doc_txt ul li p{display:block;}
+	ul.doc3 > li > .doc_txt > ul > li.w100 > ol > li{padding:0;}
+	
+	.list_sec2 ul li div.ls_tit{float:none; margin:0 auto; padding:0 0 20px 0; background:url(https://www.childsupport.or.kr/images/sub/m_circle_line.gif) center bottom no-repeat;}
+	.list_sec2 ul li div.ls_txt{margin:0;}
+	
+	.sign_box1{padding:34px 10px;}
+	.sign_box1 div.policy{padding:167px 0 0 0; background:url(https://www.childsupport.or.kr/images/sub/policy_icon.gif) center 0 no-repeat;}
+	.sign_box1 div.email{padding:167px 0 0 0; background:url(https://www.childsupport.or.kr/images/sub/email_icon.gif) center 0 no-repeat;}
+	
+	.list_sec1 ul li .ls_tit{display:block; float:none; padding:10px 0; width:auto; height:auto; background:#7f81aa;}
+	.list_sec1 ul li .ls_c1{background:#8a7aa6;}
+	.list_sec1 ul li .ls_tit p{display:block;}
+	.list_sec1 ul li .ls_txt{display:block; float:none; width:auto; height:auto; border-top:none;}
+	.list_sec1 ul li .ls_txt ul{display:block;}
+	.list_sec1 ul li .ls_txt ul li{float:left;}
+	
+}
+
+@media only screen and (max-width:480px) {
+	
+	.h_wrap{}
+	.h_logo{padding-top:23px;}
+	.utill_wrap{margin-top:25px;}
+	
+	.strapline{padding-top:30px;}
+	.strapline h3{font-size:24px;}
+	.nav ul li{letter-spacing:-1px;}
+	.etc{top:20px;}
+	
+	/* 양육비 이행확보 지원이란? */
+	.sec_img2 ul li{width:46%;}
+	
+	.d_q p span{font-size:16px;}
+	.d_chk{padding:20px;}
+	.d_chk ul li{padding:10px 20px;}
+	.d_chk ul li.fst{border-right:none;}
+	.d_chk ul li.lst{border-left:none;}
+	.d_chk ul li:nth-child(3){margin-top:10px;}
+	.d_chk ul.c_type2 li{display:block; padding:10px; border:none; text-align:left;}
+	.ds_txt ul li{padding:0 0 0 8px;}
+	
+	.btn_type2 a{display:inline-block; margin:0 3px 7px;}
+	
+	/* CSA소개 */	
+	.history_wrap{width:315px; height:1371px;}
+	.history1{top:30px; left:119px;}
+	.history2{top:289px; right:123px; bottom:inherit;}
+	.history3{bottom:650px; left:119px;}
+	.history4{bottom:415px; right:123px;}
+	.history5{bottom:-7px; left:119px;}
+	
+	/* 사이트 정보 */
+	.sitemap ol > li{margin:0 0 40px 0; width:100%; height:auto;}
+	.sitemap ol > li > ol > li{float:left; width:200px;}
+	
+	/* 회원관련 */
+	.certify_wrap{overflow:visible;}
+	.certify_wrap div{float:none; margin:0; width:100%;}
+	.certify_wrap div.mobile{margin:0 0 10px 0;}
+	
+	#evaluation .txt_serach span{margin-top: 10px;}
+}
+
+@media only screen and (max-width:380px) {
+	
+	.d_chk ul li p img{width:36px;}
+	
+	.l_insert label{font-size:13px;}
+	.l_insert label.wl{width:88px;}
+	
+	.bootstrap-datetimepicker-widget {left:50% !important; margin-left:-125px; width:250px !important;}
+	
+}
+
+
+/*2022-02-16*/
+.mj_service{display:flex;justify-content:space-between;list-style:none;padding:0;margin:0;}
+.mj_service li{}
+.mj_service li + li{}
+.mj_service li:nth-child(2n){}
+.mj_service li:nth-child(n+3){}
+.mj_service li img{}
+
+.a_link{text-decoration:underline;}
+.a_link:hover{color:#111;}
+
+.txt_box6{overflow:hidden; padding:26px 22px; border:1px solid #c4c4c4;}
+.txt_box6 .txt_group{float:left; width:429px;}
+.txt_box6 > ul{margin-right:30px; border-right:1px dotted #ddd;}
+.txt_box6 ul.lst{margin-right:0; border:none;}
+.txt_box6 ul > li{margin-bottom:8px; padding-left:12px; background:url(https://www.childsupport.or.kr/images/sub/s_dot03.gif) 0 8px no-repeat; font-size:15px; line-height:23px; font-weight:bold;}
+.txt_box6 ul > li + li{margin-top:8px;}
+.txt_box6 ul > li > ul{margin-top:3px;}
+
+.doc_wrap{margin-bottom:45px; }
+.doc_wrap .doc_item{}
+.doc_wrap .doc_item + .doc_item{margin-top:25px;}
+.doc_wrap .doc_inner{padding:20px 87px 20px; border:1px solid #c4c4c4;}
+.doc_wrap .doc_inner.txt{padding:28px 30px;font-size:14px;}
+.doc_wrap .doc_title{margin-bottom:14px; font-family:"MalgunGothic"; font-weight:bold; font-size:16px; color:#3573aa;}
+.doc_ads{font-weight:700;}
+.doc_wrap .doc_downloads{margin-top:20px;display:flex;justify-content:center;}
+.doc_wrap .doc_downloads .item{}
+.doc_wrap .doc_downloads .item + .item{margin-left:16px}
+.doc_wrap .doc_downloads .item a img{max-width:100%;}
+
+@media screen and (max-width: 768px) {
+	.mj_service{flex-wrap:wrap;}
+	.mj_service li{width:48%;text-align:center;}
+	.mj_service li + li{}
+	.mj_service li:nth-child(2n){margin-left:4%;}
+	.mj_service li:nth-child(n+3){margin-top:4%;}
+	.mj_service li img{max-width:100%;}
+}
+@media screen and (max-width: 768px) {
+	.txt_box6{padding:18px 15px }
+	.txt_box6 ul > li + li{margin-top:5px;}
+	.doc_wrap .doc_inner{padding:20px;}
+	.doc_wrap .doc_downloads{flex-wrap:wrap;}
+	.doc_wrap .doc_downloads .item{width:100%;text-align:center;}
+	.doc_wrap .doc_downloads .item + .item{margin-left:0;margin-top:10px;}
+	.doc_wrap ul.doc1 > li{margin:0 2% 20px 0; width:49%; font-size:13px;box-sizing:border-box;}
+	.doc_wrap ul.doc1 > li:nth-child(2n){margin-right:0;}
+
+
+}
+
+@media only screen and (max-width:580px) {
+	.doc_wrap ul.doc1 > li{margin:0 0 5px 0; width:100%;}
+}
+
+.sign_box2{margin-bottom:40px !important;}
+.sub_contents2{word-break:keep-all;} 
+.privacy_policy_box_01{display: flex; flex-wrap: wrap;margin-bottom: 40px;border:1px solid #ddd;border-bottom:0;}
+.privacy_policy_box_01 .box_01{flex: 1 1 30%; text-align: center; padding: 20px 10px;border-bottom:1px solid #ddd;border-right:1px solid #ddd;}
+.privacy_policy_box_01 .box_01:nth-child(3n){border-right:0;}
+.privacy_policy_box_01 .box_01 .img_box{}
+.privacy_policy_box_01 .box_01 .img_box img{}
+.privacy_policy_box_01 .box_01 .tit{margin-top: 25px; font-weight: 600;}
+
+.privacy_contents_wrap{border: 1px solid #ddd;margin-bottom: 40px;}
+.privacy_contents_wrap .privacy_contents{display: flex; border-bottom: 1px solid #ddd; align-items: center; padding: 10px 10px 10px 30px;}
+.privacy_contents_wrap .privacy_contents:last-child{border-bottom: none;}
+.privacy_contents_wrap .privacy_contents .img_box{display: flex; align-items: center;}
+.privacy_contents_wrap .privacy_contents .img_box img{margin-right:4px;}
+.privacy_contents_wrap .privacy_contents a{margin-right: 17px;letter-spacing: -1.1px; font-weight: 600;font-size:15px;}
+.privacy_contents_wrap .privacy_contents img{}
+.privacy_title{display:flex;align-items:center;margin-bottom:24px;}
+.privacy_title h4{margin-bottom:0;}
+.privacy_title img{margin-left:12px;}
+.privacy_title img + img{margin-left:3px;}
+
+.response_table{position: relative;}
+.response_table,
+.response_table *{box-sizing: border-box;}
+.response_table:before,
+.response_table:after{content:"";position: absolute;top:0;width:1px;height:100%;background-color: #fff;}
+.response_table:before{left:0;}
+.response_table:after{right:0;}
+.response_table table{width:100%;border-top:3px solid #4b5359; font-size:14px;border-collapse: collapse;border-spacing: 1px;letter-spacing:-0.3px;}
+.response_table table th{padding:18px 0; background-color:#f5f5f5; border:1px solid #d6d6d6;font-weight:bold;}
+.response_table table th.lst{border-right:none;}
+.response_table table th.bgn{background:none;}
+.response_table table td{padding:18px 15px; border:1px solid #d6d6d6;text-align: center;font-size:13px;color:#353535;}
+.response_table table td.bold{font-weight:bold;}
+.response_table table td.fz{font-size:16px;}
+.response_table table td.wb{word-break:break-word;}
+.response_table table td.red{color:#c70000;}
+.response_table table td .red{color:#c70000; vertical-align:text-bottom;}
+.response_table table td a{font-weight:bold;}
+.response_table table .mb_tit{display: none;}
+.response_table .dot_ul{text-align: left;}
+.response_table .dot_ul li{position: relative;padding-left:9px;}
+.response_table .dot_ul li + li{margin-top:8px;}
+.response_table .dot_ul li:before{content:"";position: absolute;left:0;top:6px;width:3px;height:3px;border-radius: 50%;background-color: #555555;}
+@media screen and (max-width: 768px) {
+    .response_table:before,
+    .response_table:after{display: none;}
+    .response_table table thead{display: none;}
+    .response_table table,
+    .response_table table tbody,
+    .response_table table tbody tr,
+    .response_table table td{display: block;width: 100%;}
+    .response_table table{}
+    .response_table table tr{padding:18px 15px;border-bottom:1px solid #d6d6d6;}
+    .response_table table td{border:0;padding:0;text-align: left;display: flex;align-items: start;}
+    .response_table table td + td{margin-top:10px;}
+    .response_table table td .mb_tit{width:67px;padding-right:5px;display: block;font-weight: bold;}
+    .response_table table td .mb_cnt{flex:1 1 auto;width: 1%;word-break: keep-all;}
+    .response_table .dot_ul li + li{margin-top:6px;}
+    .v_pc{display: none !important;}
+    .response_table table td.v_pc + td{margin-top:0;}
+}
+
+.ochart_content{padding:50px 65px;background-color: #F6F9FC;text-align: center;margin-bottom:50px;width:920px;}
+.ochart_content,
+.ochart_content *{box-sizing: border-box;}
+.ochart_content .top_area{width:240px;margin:0 auto;padding-bottom:30px;position: relative;}
+.ochart_content .top_area:before{content:"";position: absolute;left:50%;top:0;margin-left:-1px;width:2px;height:100%;background-color: #BCC8D2;}
+
+.ochart_content button{width:240px;height: 46px;display: block;font-size:16px;font-weight: bold;color:#fff;background-color: #868A8E;padding:0 12px;border-radius:8px;position: relative;z-index: 10;cursor: pointer;line-height: 1.3;border:0;}
+.ochart_content button small{font-size:14px;}
+.ochart_content button.btn_sm{padding:0 10px;width: 80px;}
+.ochart_content button.btn_circle{padding:0 10px;border-radius: 50%;width:80px;height:80px;}
+.ochart_content button.bg_blue{font-size:18px;}
+.ochart_content button.bg_blue small{display: block;font-size:16px;padding:14.5px;margin:0;padding:0;}
+.ochart_content button .in_item{background-color: #F4F4F7;border-radius: 8px;font-size:14px;font-weight:bold;margin-top:13px;padding:11px 0;}
+.ochart_content  button.bg_blue{background-color:#4C87BB;border:1.5px solid #4C87BB;height:80px;}
+.ochart_content  button.bg_white{background-color:#fff;border:1.5px solid #53799C;color:#53799C;}
+.ochart_content  button.bg_lblue{background-color:#ECF6FF;border:1.5px dashed #4C87BB;color:#4C87BB;}
+.ochart_content  button.bg_dblue{background-color:#53799C;border:1.5px solid #53799C;}
+
+.ochart_content .gamsa_items{position: absolute;top:100px;left:50%;margin-left:150px;}
+.ochart_content .gamsa_items:before{content:"";position: absolute;right:0;top:50%;width:230px;margin-top:-1px;height:2px;background-color: #BCC8D2;}
+
+.ochart_content .won_children_items{position: absolute;right:-220px;top:0;display: flex;}
+.ochart_content .won_children_items:before{content:"";position: absolute;right:0;top:50%;width:150%;border-top:1.5px dashed #4C87BB;}
+.ochart_content .won_children_items button{margin-left:30px;}
+.ochart_content .won_children_items button small{display: block;}
+.ochart_content .kyoung_items{margin-top:96px;}
+.ochart_content .kyoung_items button{height: 50px;}
+.ochart_content .bottom_area{margin:0 auto;position: relative;display: flex;align-items: start;gap:35px;}
+.ochart_content .bottom_area:before{content:"";position: absolute;left:120px;top:0;width:calc(100% - 238px);height:2px;background-color: #BCC8D2;}
+.ochart_content .bottom_area > .org-node{flex:1 1;padding-top:30px;position: relative;}
+.ochart_content .bottom_area > .org-node:before{content:"";position: absolute;left:50%;bottom:0;margin-left:-1px;width:2px;height:100%;background-color: #BCC8D2;}
+.ochart_content .bottom_area > .org-node button{}
+.ochart_content .bottom_area .org-children{}
+.ochart_content .bottom_area .org-children button{margin-top:10px;background-color: #fff;font-size:15px;}
+.ochart_content .bottom_area .org-children .org-children{padding-left:60px;position: relative;padding-top:10px;background-color: #F6F9FC;}
+.ochart_content .bottom_area .org-children .org-children button{margin-top:0;}
+.ochart_content .bottom_area .org-children .org-children:before{content:"";position: absolute;left:29px;bottom:23px;width:2px;height:56px;background-color: #BCC8D2;}
+.ochart_content .bottom_area .org-children .org-children:after{content:"";position: absolute;left:29px;top:50%;margin-top:3px;height:2px;width:40px;background-color: #BCC8D2;}
+.ochart_content .bottom_area .org-children .org-children button{width:180px;}
+.ochart_content .bottom_area .bg_dpurple_items > button{background-color:#686AA4;border:1.5px solid #686AA4;}
+.ochart_content .bottom_area .bg_purple_items > button{background-color: #746099;border:1.5px solid #746099;}
+.ochart_content .bottom_area .bg_pink_items > button{background-color: #8F5B8B;border:1.5px solid #8F5B8B;}
+.ochart_content .bottom_area .bg_dpurple_items .org-children button{border:1.5px solid #686AA4;color:#686AA4;}
+.ochart_content .bottom_area .bg_purple_items .org-children button{border:1.5px solid #6F608A;color:#6F608A;}
+.ochart_content .bottom_area .bg_pink_items .org-children button{border:1.5px solid #8F5B8B;color:#8F5B8B;}
+@media screen and (max-width: 768px) {
+
+    .ochart_content{padding:40px 32px;margin-bottom:35px;width:100%;}
+    .ochart_content .top_area{width:100%;padding-bottom:15px;}
+    .ochart_content button{width:100%;height: 46px;}
+    
+    .ochart_content .gamsa_items{left:50%;margin-left:20px;top:242px;width:calc(50% - 20px);}
+    .ochart_content .gamsa_items button{width:100%;height: 40px;}
+    .ochart_content .gamsa_items:before{left:-20px;top:50%;width:50%;margin-top:-1px;height:2px;background-color: #BCC8D2;}
+    
+    .ochart_content .won_children_items{left:50%;margin-left:20px;right:auto;top:80px;flex-direction: column;width:calc(50% - 20px);}
+    .ochart_content .won_children_items:before{left:50%;top:0;width:1px;height:100%;border-left:1.5px dashed #4C87BB;border-top:0;}
+    .ochart_content .won_children_items button{margin-left:0;margin-top:15px;width:100%;border-radius: 50em;height: 56px;}
+    .ochart_content .kyoung_items{margin-top:222px;}
+	.ochart_content .kyoung_items button{/* height: 50px; */}
+
+    .ochart_content .bottom_area{display:block;}
+    .ochart_content .bottom_area:before{display: none;}
+    .ochart_content .bottom_area > .org-node{flex:1 1;padding-top:10px;position: relative;}
+    .ochart_content .bottom_area > .org-node:before{content:"";position: absolute;left:50%;bottom:0;margin-left:-1px;width:2px;height:100%;background-color: #BCC8D2;}
+    .ochart_content .bottom_area .org-children{}
+    .ochart_content .bottom_area .org-children button{margin-top:10px;background-color: #fff;}
+    .ochart_content .bottom_area .bg_dpurple_items > button{background-color:#686AA4;border:1.5px solid #686AA4;}
+    .ochart_content .bottom_area .bg_purple_items > button{background-color: #6F608A;border:1.5px solid #6F608A;}
+    .ochart_content .bottom_area .bg_pink_items > button{background-color: #8F5B8B;border:1.5px solid #8F5B8B;}
+    .ochart_content .bottom_area .bg_dpurple_items .org-children button{border:1.5px solid #686AA4;color:#686AA4;}
+    .ochart_content .bottom_area .bg_purple_items .org-children button{border:1.5px solid #6F608A;color:#6F608A;}
+    .ochart_content .bottom_area .bg_pink_items .org-children button{border:1.5px solid #8F5B8B;color:#8F5B8B;}
+	.ochart_content .bottom_area .org-children .org-children{margin-left:50%;padding-left:20px;background-color: transparent;}
+	.ochart_content .bottom_area .org-children .org-children:before{left:9px;}
+	.ochart_content .bottom_area .org-children .org-children:after{left:9px;margin-top:5px}
+	.ochart_content .bottom_area .org-children .org-children button{width: 100%;}
+}
+
+table{font-size:13px;}
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;}
+.btn_align{display: flex;flex-wrap:wrap;align-items: center;margin-top:10px;}
+.btn_align .r{margin-left:auto;}
+.btn_align [class^="btn_"] {margin-top:0;}
+@media screen and (max-width: 768px) {
+    .btn_align > div + div{margin-top:10px;}
+}
+.form_btn{background-color: #666;color:#fff !important;display: inline-block;height:36px;padding:0 12px;line-height: 36px;font-size:13px;font-weight:700;;text-decoration:none !important;}
+.form_btn2{background-color: #666;color:#fff !important;display: inline-block;height:30px;padding:0 12px;line-height: 30px;font-size:13px;font-weight:700;;text-decoration:none !important;}
+.table_file{display: inline-block;max-width: 100%;}
+.table_file span{display: table !important;table-layout: fixed;width: fit-content;text-decoration: underline;}
+.table_file a{display: table-cell;color:#353535 !important;font-size:13px;padding-left:18px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;background-position: left center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.4 2H4.2C3.88174 2 3.57652 2.12643 3.35147 2.35147C3.12643 2.57652 3 2.88174 3 3.2V12.8C3 13.1183 3.12643 13.4235 3.35147 13.6485C3.57652 13.8736 3.88174 14 4.2 14H11.4C11.7183 14 12.0235 13.8736 12.2485 13.6485C12.4736 13.4235 12.6 13.1183 12.6 12.8V6.2L8.4 2Z' stroke='%234075FB' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8.40002 2V6.2H12.6' stroke='%234075FB' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");}
+.table_file a:hover{color:#000;}
+.list_style_2 td.sm{padding:10px !important;}
+
+
+.align_center{text-align: center !important;}
+.align_right{text-align: right !important;}
+.responsive_table{position: relative !important;}
+.responsive_table + .responsive_table{margin-top:30px;}
+.responsive_table:before,
+.responsive_table:after{content:"";position: absolute;top:0;width:1px;height:100%;background-color: #fff;}
+.responsive_table:before{left:0;}
+.responsive_table:after{right:0;}
+.responsive_table table{width:100%;  font-size:14px;border-spacing: 1px;background-color: #c6c6c6;border-collapse: separate;border-top:2px solid #4b5359; border-bottom:2px solid #4b5359;}
+.responsive_table thead th{padding:17px 0; background-color: #F5F5F5;font-size: 14px;font-weight: 700;color:#353535;}
+.responsive_table tbody th{padding:25px 17px 25px 28px; background-color: #F5F5F5;font-size: 14px;font-weight: 700;color:#353535;text-align:left;line-height: 1.4;}
+.responsive_table tbody th b{color:#cc3300;}
+.responsive_table tbody td{padding:9px; text-align:center; line-height:20px;background-color: #fff;font-size:13px;color:#353535;text-align: left;}
+.responsive_table tbody td .mb_tit{display: none;}
+.responsive_table tbody th.center,
+.responsive_table tbody td.center{text-align: center;}
+.responsive_table tbody th.right,
+.responsive_table tbody td.right{text-align: right;}
+.responsive_table tbody.center td{text-align: center;}
+.responsive_table input[type="text"],
+.responsive_table input[type="tel"],
+.responsive_table input[type="password"],
+.responsive_table input[type="email"]{height:34px;padding:0 5px;font-size:13px;color:#353535;border:1px solid #C6C6C6;}
+.responsive_table select{height:36px;font-size:13px;color:#353535;border:1px solid #C6C6C6;}
+.responsive_table .input_group{display: flex;align-items: center;}
+.responsive_table .input_group + .input_group{margin-top:5px;}
+.responsive_table .input_group .input{flex:1 1 auto;width: 1%;display: flex;flex-wrap:wrap;}
+.responsive_table .input_group .input input,
+.responsive_table .input_group .input select{flex:1 1 auto;width: 1%;}
+.responsive_table .input_group .text{text-align: center;font-size:13px;text-align: center;min-width:10px;}
+.responsive_table .input_group > * + *{margin-left:5px;}
+.responsive_table .input_group .size_xl{max-width:412px;}
+.responsive_table .input_group .size_lg{max-width:200px;}
+.responsive_table .input_group .size_md{max-width:150px;}
+.responsive_table .input_group .size_sm{max-width:120px;}
+.responsive_table .input_group .size_xs{max-width:90px;}
+.responsive_table .input_group .input_item{display: inline-flex;align-items: center;}
+.responsive_table .input_group .input_item + .input_item{margin-left:20px;}
+.responsive_table .input_group .input_item > * + *{margin-left:5px;}
+
+.date_icon{background-image: url('https://www.childsupport.or.kr/images/admin/contents/calendar2.png');background-repeat: no-repeat;background-position: right 5px center;}
+.month-picker .ui-datepicker-calendar{display: none !important;}
+.check_labels{display: flex;flex-wrap: wrap;gap:10px 20px;margin:5px 0;}
+@media screen and (max-width: 768px) {
+	.responsive_table{position: relative !important;}
+	.responsive_table:before,
+	.responsive_table:after{display: none;}
+	.responsive_table table{background-color: #fff;}
+	.responsive_table table thead{display: none;}
+	.responsive_table table,
+	.responsive_table table tbody,
+	.responsive_table table tbody tr,
+	.responsive_table table tbody tr th,
+	.responsive_table table tbody tr td{display: block;width: 100%;text-align: left;}
+	.responsive_table table tbody tr td + td{margin-top:10px;}
+	.responsive_table table tbody tr td + th{margin-top:15px;padding-top:15px;border-top:1px solid #c6c6c6;}
+	.responsive_table table tbody tr{padding:15px 0;}
+	.responsive_table table tbody tr + tr{border-top:1px solid #c6c6c6;}
+	.responsive_table table tbody tr th{background-color:transparent;padding:0;font-size:13px;color:#353535;font-weight: 700;margin-bottom:5px;}
+	.responsive_table table tbody tr th br{display: none;}
+	.responsive_table tbody td{padding:0; text-align:center; line-height:20px;background-color: #fff;font-size:13px;color:#353535;}
+	.responsive_table tbody td .mb_tit{display: block;font-size:13px;color:#353535;font-weight: 700;margin-bottom:5px;}
+	.responsive_table tbody th.center,
+	.responsive_table tbody td.center{text-align: left;}
+	.responsive_table tbody th.right,
+	.responsive_table tbody td.right{text-align: left;}
+	.responsive_table tbody.center td{text-align: left;}
+	.responsive_table input.align_center{text-align: left !important;}
+	.responsive_table input.align_right{text-align: left !important;}
+
+	.responsive_table .input_group{flex-wrap:wrap;}
+	.responsive_table .input_group .text{min-width:0;}
+	.responsive_table .input_group > * + *{margin-left:4px;}
+	.responsive_table .input_group .size_xl,
+	.responsive_table .input_group .size_lg,
+	.responsive_table .input_group .size_md,
+	.responsive_table .input_group .size_sm,
+	.responsive_table .input_group .size_xs{max-width:100%;}
+	.responsive_table .input_group .input_item{display:flex;width: 100%;}
+	.responsive_table .input_group .input_item + .input_item{margin-top:5px;margin-lefT:0;}
+	.responsive_table .input_group .input_item > * + *{margin-left:0;}
+	.responsive_table .input_group .input_tit{min-width:80px;font-size:12px;}
+}
+
+
+/*인사말*/
+.greeting_content{word-break: keep-all;}
+.greeting_content .greeting_top{background-color: #F8FAFD;padding:60px 30px 30px 285px;position: relative;background-image: url('https://www.childsupport.or.kr/images/greeting_top.png');background-position: right bottom;background-repeat: no-repeat;}
+.greeting_content .greeting_top .img{position: absolute;left:30px;top:30px;width:210px;}
+.greeting_content .greeting_top .img img{width: 100%;}
+.greeting_content .subject{color:#355E7E;font-size:24px;margin:0;padding:0;background: none;font-weight: normal;line-height: 1.5;}
+.greeting_content .subject strong{font-weight: 700;}
+.greeting_content .subject b{color:#353535;}
+.greeting_content .text{padding-left:285px;}
+.greeting_content .text p{margin-top:30px;color:#353535;font-size:16px;font-family:"MalgunGothic";line-height: 1.6;}
+.greeting_content .text p + p{}
+.greeting_content .text p strong{font-weight:700;}
+@media screen and (max-width: 768px) {
+	.greeting_content .greeting_top{padding:20px;background-position: right -35px top 23px;}
+	.greeting_content .greeting_top .img{position: relative;left:0;top:0;width:110px;}
+	.greeting_content .subject{font-size:16px;margin-top:18px;}
+	.greeting_content .text{padding:20px;}
+	.greeting_content .text p{margin-top:0;font-size:13px;}
+	.greeting_content .text p + p{margin-top:16px;}
+	.greeting_content .text p br{display: none;}
+} 
+
+/*양육비 이행확보 지원>사업안내>제재조치*/
+.table_section + .table_section{margin-top:50px;}
+.table_box{margin-top:25px;}
+.table_box + .table_box{margin-top:50px;}
+.table_section h5{font-size:16px; font-weight:700; color:#355E7E;margin-bottom:18px;}
+.table_section > p{color:#353535;font-size: 14px; line-height:1.7;}
+.table_section  + h4{margin-top:50px;}
+.visible_table_pc{}
+.visible_table_pc table{border-top:3px solid #4B5359;table-layout: fixed;width: 100%;}
+.visible_table_pc table thead th{background-color:#F5F5F5;color: #353535;font-size: 13px;font-weight: 700;vertical-align: middle;padding:10px;border-bottom:1px solid #D6D6D6;border-right:1px solid #D6D6D6;}
+.visible_table_pc table thead tr th:last-child{border-right: 0;}
+.visible_table_pc table tbody{position: relative;}
+.visible_table_pc table tbody:before{content:"";position: absolute;left:0;right:0;bottom:0;height:1px;background-color: #4B5359;}
+.visible_table_pc tbody th{background-color: #F5F5F5;vertical-align: middle;text-align: center;color:#353535;padding:10px 5px;font-weight: 700;font-size:14px;border-right:1px solid #D6D6D6;border-bottom:1px solid #D6D6D6;}
+.visible_table_pc tbody th.white{background-color: #fff;}
+.visible_table_pc tbody td{padding:12px;vertical-align: middle;text-align: left;color:#353535;font-size:13px;border-right:1px solid #D6D6D6;border-bottom:1px solid #D6D6D6;}
+.visible_table_pc tbody tr td:last-child{border-right:0;}
+.visible_table_pc .t_center{text-align: center;}
+.visible_table_pc .v_top{vertical-align: top;}
+.visible_table_pc b{font-weight: 500;}
+.visible_table_pc strong{font-weight: 500;font-size:14px;}
+.visible_table_pc p{}
+.visible_table_pc p + ol{margin-top:6px;}
+.visible_table_pc ol + p{margin-top:10px;}
+.visible_table_pc ol li{}
+.visible_table_pc ol li + li{margin-top:6px;}
+.visible_table_pc .underline{text-decoration: underline;}
+.support_process{display: flex;gap: 8px;}
+.support_process li{flex:1 1;border:1px solid #E1E7EC;border-radius: 5px;background-color: #ECF2F6;text-align: center;padding:14px 12px;}
+.support_process li .num{display: block;margin:0 auto 14px;border-radius: 50%;background-color: #355E7E;color:#fff;text-indent: -1px;min-width:20px;width:20px;height: 20px;line-height: 20px;font-size:13px;font-weight: 700;}
+.support_process li p{color:#355E7E;font-size:14px;}
+.support_process li strong{font-weight:700;display: block;margin-bottom:2px;}
+.support_process li svg{display: block;margin:0 auto 14px;}
+.table_box > * + ul{margin-top:15px;}
+.table_box > ul{}
+.table_box > ul li{font-size:14px;}
+.table_box > ul li + li{margin-top:8px;}
+.check_cnt{display: block;width: max-content;margin:0 auto;color:#355E7E;font-size:13px;font-weight: 500;padding-left: 20px;background-position: left center;background-repeat: no-repeat;min-height:16px;line-height: 16px;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none'%3E%3Cg stroke='%23355E7E' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' clip-path='url(%23a)'%3E%3Cpath d='M14.666 7.387V8a6.667 6.667 0 1 1-3.953-6.093'/%3E%3Cpath d='M14.667 2.667 8 9.34l-2-2'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h16v16H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");}
+.table_box .dot{font-size: 400;font-size:13px;}
+.table_box .dot li{padding-left:11px;position: relative;}
+.table_box .dot li:before{content:"";position: absolute;left:0;top:8px;width:3px;height:3px;border-radius: 50%;background-color: #353535;}
+.table_box .dot li + li{margin-top:5px;}
+.table_box .dot li a{display: block;margin-bottom:2px;width: max-content;color:#1B83D4;font-weight:500;padding-right: 20px;background-position: right center;background-repeat: no-repeat;}
+.table_box .dot li a:hover{text-decoration: underline;}
+.table_box .dot li a.link{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='16' fill='none'%3E%3Cpath stroke='%231B83D4' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12.34 8.667v4A1.333 1.333 0 0 1 11.007 14H3.673a1.334 1.334 0 0 1-1.333-1.333V5.333A1.333 1.333 0 0 1 3.673 4h4M10.34 2h4v4M7.007 9.333 14.34 2'/%3E%3C/svg%3E");}
+.table_box .dot li a.down{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none'%3E%3Cpath stroke='%231B83D4' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M14 10v2.667A1.334 1.334 0 0 1 12.667 14H3.333A1.334 1.334 0 0 1 2 12.667V10M4.667 6.667 8 10l3.334-3.333M8 10V2'/%3E%3C/svg%3E");}
+
+.table_box * + .star_ul{margin-top:15px;}
+.table_box .star_ul li{display: block;padding-left:18px;position: relative;}
+.table_box .star_ul li + li{margin-top:8px;}
+.table_box .star_ul li::before{content:"※";position: absolute;left:0;top:0;}
+
+.visible_table_mobile{color:#353535;display: none;border-bottom: 1px solid #4B5359;}
+.visible_table_mobile *{color:#353535;}
+.visible_table_mobile b{font-weight: 500;}
+.visible_table_mobile .underline{text-decoration: underline;}
+.visible_table_mobile .box .title{background-color: #F5F5F5;border-top:1px solid #4B5359;border-bottom:1px solid #D6D6D6;text-align: center;padding:9px 0;font-size: 14px;font-weight: 700;}
+.visible_table_mobile .box .content{padding:16px 0;}
+.visible_table_mobile .box .content .row{}
+.visible_table_mobile .box .content .row + .row{margin-top:16px;padding-top: 16px;border-top:1px solid #D6D6D6;}
+.visible_table_mobile .box .content .tit{font-size:14px;font-weight:700;margin-bottom: 10px;}
+.visible_table_mobile .box .content .cnt{font-size: 14px;}
+.visible_table_mobile .box .content .cnt p{}
+.visible_table_mobile * + .color_box{margin-top:8px;}
+.visible_table_mobile .color_box{display: flex;flex-direction: column;gap:8px;font-size:13px;}
+.visible_table_mobile .color_box > li{padding:7px 10px;border-radius: 5px;border:1px solid #D6D6D6;}
+.visible_table_mobile .color_box > li.blue{border-color:#A4B5CF;background-color: #F8FBFF;}
+.visible_table_mobile .color_box > li.green{border-color:#A9C7B5;background-color: #F6FEFA;}
+.visible_table_mobile .color_box > li.red{border-color:#F5D6B7;background-color: #FEFAF6;}
+.visible_table_mobile .color_box > li b{font-size:14px;font-weight: 500;}
+.visible_table_mobile .color_box .between{display: flex;justify-content: space-between;}
+.visible_table_mobile .color_box .between + .between{margin-top:2px;}
+.visible_table_mobile .color_box .s_tit{font-weight:500;margin-bottom: 4px;}
+.visible_table_mobile .color_box .s_cnt{}
+.visible_table_mobile .color_box .s_cnt p{}
+.visible_table_mobile .color_box .s_cnt ol{font-size:13px;}
+.visible_table_mobile .color_box .s_cnt ol li{text-indent: -15px;padding-left:15px;}
+.visible_table_mobile .color_box .s_cnt ol li + li{margin-top:4px;}
+.visible_table_mobile * + .dot{margin-top:8px;}
+.visible_table_mobile .dot{font-size:14px;}
+.visible_table_mobile .dot li{}
+.visible_table_mobile .dot li + li{margin-top:8px;}
+.visible_table_mobile .check_cnt{margin:0;color:#355E7E;display: block;font-size:14px;font-weight: 500;padding-left: 20px;background-position: left center;background-repeat: no-repeat;min-height:16px;line-height: 16px;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none'%3E%3Cg stroke='%23355E7E' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' clip-path='url(%23a)'%3E%3Cpath d='M14.667 7.387V8a6.667 6.667 0 1 1-3.954-6.093'/%3E%3Cpath d='M14.667 2.667 8 9.34l-2-2'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h16v16H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");}
+.visible_table_mobile * + .check_cnt{margin-top:10px;}
+.visible_table_mobile .down,
+.visible_table_mobile .link{display: block;width: max-content;margin-bottom:2px;padding-right: 20px;background-position: right center;background-repeat: no-repeat;color:#1B83D4;font-weight: 500;}
+.visible_table_mobile .down{background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' fill='none'%3E%3Cpath stroke='%231B83D4' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M14 10.5v2.667a1.334 1.334 0 0 1-1.333 1.333H3.333A1.334 1.334 0 0 1 2 13.167V10.5M4.667 7.167 8 10.5l3.333-3.333M8 10.5v-8'/%3E%3C/svg%3E");}
+.visible_table_mobile .link{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' fill='none'%3E%3Cpath stroke='%231B83D4' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 9.167v4a1.334 1.334 0 0 1-1.333 1.333H3.333A1.334 1.334 0 0 1 2 13.167V5.833A1.333 1.333 0 0 1 3.333 4.5h4M10 2.5h4v4M6.667 9.833 14 2.5'/%3E%3C/svg%3E");}
+
+@media only screen and (max-width: 768px) {
+    .visible_table_pc{display: none;}
+    .visible_table_mobile{display: block;}
+    .support_process{flex-direction: column;gap: 24px;}
+    .support_process li{padding:14px 16px;display: flex;align-items: center;position: relative;}
+    .support_process li:after{content:"";position: absolute;left:50%;bottom:-24px;width:24px;height: 24px;width:24px;height: 24px;background-position: center center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none'%3E%3Cpath stroke='%2381909C' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 9 6 6 6-6'/%3E%3C/svg%3E");}
+    .support_process li:last-child:after{display: none;}
+    .support_process li .num{margin:0;text-indent: -2px;}
+    .support_process li p{font-size:13px;flex: 1 1 auto;text-align: left;padding-left:12px;}
+    .support_process li strong{font-size:14px;margin: 0;}
+    .support_process li br{display: none;}
+    .support_process li svg{display: none;}
+}
+
+@import url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy.css');
+	.mascoat { display: flex; align-items: center; gap: 40px; }
+	.mascoat_img { width:340px;flex:0 0 auto; text-align: center;}
+	.mascoat_img img { width: 260px; display: block; margin: 0 auto;}
+	.mascoat div { flex: 1 1 auto; }
+	.mascoat h5 { font-family: 'Paperlogy', sans-serif; font-size: 32px; font-weight: 800; margin-bottom: 20px; color:#0C2C4C; }
+	.mascoat h6 { font-family: 'Paperlogy', sans-serif; font-size: 20px; font-weight: 700; margin-bottom: 20px; color:#0C2C4C; }
+	.mascoat h6 strong { color:#1899B3; font-weight: 700; line-height: 1.4; }
+	.mascoat p { font-size: 14px; line-height: 1.4; }
+@media only screen and (max-width: 768px) {
+    .mascoat { flex-direction: column; gap: 16px; text-align: center;}
+    .mascoat_img { width: 100%; height:200px;display: flex;align-items: center;justify-content: center;}
+    .mascoat_img img { width: 178px; }
+    .mascoat h5 { font-size: 24px;margin-bottom: 20px; }
+    .mascoat h6 { font-size: 16px;margin-bottom: 16px; }
+    .mascoat p { font-size: 13px; }
+}
+@media only screen and (max-width: 345px) {
+    .mascoat{word-break: keep-all;}
+    .mascoat br.mb_hide{display: none;}
+}
+
+/* 양육비 신고센터 */
+.declaration_center {
+	margin-bottom:40px;padding-right:414px;min-height:314px;background-position: right top;background-repeat: no-repeat;background-image: url('../../images/sub/declaration_center.jpg');
+  }
+  .declaration_center p {
+	color:#000;line-height: 1.7;word-break: keep-all;padding-left:11px;
+	font-size:14px;
+  }
+  .center_links {
+	display: flex;
+	gap: 20px;
+	text-align: center;
+  }
+  .center_links .item {
+	flex:1 1;
+	background-color: #f5f5f5;
+	padding: 55px;
+	border:1px solid #D6D6D6;
+  }
+  .center_links .item .tit {
+	font-size: 24px;
+	font-weight: bold;
+	font-family: "MalgunGothic";
+	color:#355E7E;
+	margin-bottom:15px;
+  }
+  .center_links .item p {
+	color:#000;
+	line-height: 1.7;
+	font-size:14px;
+  }
+  .center_links .item a {
+	margin-top:24px;
+	font-size: 14px;
+	color: #5B5B5B;
+	font-weight:bold;
+	text-decoration: none;
+	font-family: "MalgunGothic";
+	border: 1px solid #BDBDBD;
+	background-color: #fff;
+	padding: 10px 24px;
+	display: inline-block;
+  }
+  .center_links .item a:hover {
+	text-decoration: underline;
+  }
+  @media only screen and (max-width:768px) {
+	.declaration_center {
+	  margin-bottom:30px;padding-right:0;padding-bottom:324px;min-height:0;background-position: center bottom;background-size: auto 293px;
+	}
+	.center_links {
+	  flex-direction: column;
+	}
+	.center_links .item {
+	  padding: 30px;
+	}
+	.center_links .item .tit {
+	  font-size: 20px;
+	}
+	.center_links .item a {
+	  font-size: 13px;
+	  padding: 10px 20px;
+	}
+  }
+
+  /* 경영목표 및 전략 */
+  .target_strategy {
+	display: flex;
+	gap: 12px;
+  }
+  .target_strategy .item {
+	flex:1 1;
+	display: flex;
+	flex-direction: column;
+	padding:30px 24px;
+	color:#fff;
+	font-family: Arial;
+  }
+  .target_strategy .item .num {
+	display: block;
+	font-family: 'MalgunGothic', '맑은고딕', 'Malgun Gothic', sans-serif;
+	font-weight: 700;
+	font-size: 38px;
+	margin-bottom:38px;
+  }
+  .target_strategy .item .tit {
+	font-size: 20px;
+	font-family: 'MalgunGothic', '맑은고딕', 'Malgun Gothic', sans-serif;
+	font-weight: 700;
+	margin-bottom:8px;
+  }
+  .target_strategy .item .cnt {
+	font-size: 14px;
+  }
+  .target_strategy .item ul {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+  }
+  .target_strategy .item ul li {
+	position: relative;
+	padding-left: 10px;
+  }
+  .target_strategy .item ul li:before {
+	content:"";
+	position: absolute;
+	width:4px;height:4px;background-color: #fff;border-radius: 50%;left:0;top:7px;
+  }
+
+  @media only screen and (max-width:768px) {
+	.target_strategy {
+		display: block;
+	  }
+	  .target_strategy .item{
+		display: block;
+	  }
+	.target_strategy .item .num {
+		display: inline-block;
+		font-size: 18px;
+		margin-bottom:16px;
+		margin-right:8px;
+	  }
+	  .target_strategy .item .tit {
+		display: inline-block;
+		font-size: 18px;
+		margin-bottom:16px;
+	  }
+  }
+
+
+  /* 연혁 */
+  .history_list {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	/* font-family: Arial; */
+  }
+  .history_list .item {
+	display: flex;
+	gap:24px;
+  }
+  .history_list .item .tit {
+	display: flex;
+	width:220px;
+	box-sizing: border-box;
+	flex-direction: column;
+	font-size: 20px;
+	padding:32px 24px;
+	color:#fff;
+	background-color: inherit;
+  }
+  .history_list .item .year {
+  	font-family: 'MalgunGothic', '맑은고딕', 'Malgun Gothic', sans-serif;
+	font-weight: 700;
+	font-size: 38px;
+	color:#fff;
+  }
+  .history_list .item .date {
+	font-size: 14px;
+	margin-top:auto;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	gap:10px;
+  }
+  .history_list .item .date strong {
+	margin-top:1px;
+  }
+  .history_list .item .cnt {
+	display: flex;
+	flex-direction: column;
+	padding:40px 0;
+	gap: 24px;
+  }
+  .history_list .item .cnt > div {
+	display: flex;
+	align-items: baseline;
+	gap:10px;
+  }
+  .history_list .item .cnt > div strong {
+	font-size: 18px;
+	font-family: 'MalgunGothic', '맑은고딕', 'Malgun Gothic', sans-serif;
+	font-weight: 700;
+  }
+  .history_list .item .cnt > div span {
+	font-size: 16px;
+	color:#000;
+  }
+  .blue_texts {
+	margin-top:12px;
+	padding:24px 40px;
+	background-color: #F6F9FC;
+	color:#000;
+	line-height: 1.5;
+  }
+  @media only screen and (max-width:768px) {
+	.history_list {
+	gap: 40px;
+	}
+	.history_list .item {
+	flex-direction: column;
+	gap:16px;
+	}
+	.history_list .item .tit {
+	width:100%;
+	flex-direction: row;
+	align-items: center;
+	padding:16px 24px;
+	}
+	.history_list .item .year {
+	font-size:20px;
+	}
+	.history_list .item .date {
+		margin-left:auto;
+	}
+	.history_list .item .cnt {
+	padding:0 10px;
+	gap: 10px;
+	}
+	.history_list .item .cnt > div strong {
+	font-size: 14px;
+	}
+	.history_list .item .cnt > div span {
+	font-size: 14px;
+	}
+	.blue_texts {
+	margin-top:40px;
+	padding:16px;
+	}
+  }
