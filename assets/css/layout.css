@@ -470,3 +470,18 @@ background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox=
 }
 
 
+.pop_wrap{}
+.pop_wrap .divpop{position: relative;border:1px solid #E0E0E0;}
+.pop_wrap .divpopb{background-color: #fff;padding:10px;}
+.pop_wrap .divpopb label{display: flex;gap:8px;font-size:15px;color:#000;align-items: center;}
+.pop_wrap .divpopb label input{flex:0 0 auto;}
+.pop_wrap .divpopc{position: absolute;right:10px;bottom:10px;font-size:15px;}
+.pop_wrap .divpopc a:hover{text-decoration: underline;}
+.pop_wrap .divpopc a:before{content:"닫기";}
+.pop_wrap .divpopc img{display: none;}
+@media screen and (max-width:1240px) {
+    .pop_wrap{}
+    .pop_wrap .divpop{position: fixed !important;left:50% !important;top:50% !important;transform: translate(-50%,-50%);}
+    .pop_wrap .divpop img{width: auto;max-width: calc(100vw - 40px);}
+
+}
