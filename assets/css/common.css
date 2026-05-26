@@ -112,9 +112,17 @@ img{vertical-align: middle;}
  table {
   border-collapse: collapse;
 }
-:not(.sub_contents) textarea,
-:not(.sub_contents) input,
-:not(.sub_contents) select{box-sizing: border-box !important;}
+#rn_header textarea,
+#rn_header input,
+#rn_header select,
+#rn_footer textarea,
+#rn_footer input,
+#rn_footer select,
+.hd_layer textarea,
+.hd_layer input,
+.hd_layer select{
+  box-sizing: border-box !important;
+}
 .container{max-width:1440px;margin-left:auto;margin-right:auto;padding-left: 20px;padding-right: 20px;}
 @media screen and (min-width: 1441px) {
   .container{width:1440px;}
