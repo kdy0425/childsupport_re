@@ -147,11 +147,13 @@ ul.tabmenu02 li a.active{position:relative; background-color:#2d6497; border:1px
 .txt_box3{overflow:hidden; position:relative; margin-bottom:30px; background-color:#8a7aa6;} /* 박스 색2 */
 .txt_box4{overflow:hidden; position:relative; margin-bottom:30px; background-color:#9c7aa6;} /* 박스 색3 */
 .txt_box5{overflow:hidden; position:relative; margin-bottom:30px; background-color:#a67aa2;} /* 박스 색4 */
-.txt_tit{float:left; width:130px; font-family:"MalgunGothic"; font-weight:bold; font-size:16px; color:#fff; text-align:center; line-height:24px;}
-.txt_tit p{padding-top:50px;}
+.txt_box2,.txt_box3,.txt_box4,.txt_box5{display:flex;}
+
+.txt_tit{float:left; width:130px;flex:0 0 auto; font-family:"MalgunGothic"; font-weight:bold; font-size:16px; color:#fff; text-align:center; line-height:24px;}
+.txt_tit p{padding:50px 5px;}
 .txt_tit p.tt2{padding-top:37px;}
 .txt_tit p.tt3{padding-top:27px;}
-.txt_list{overflow:hidden;display:table;float:right;padding:15px 20px 15px 20px;width:736px;min-height:90px;background:#fff url(https://www.childsupport.or.kr/images/sub/txtbox_arr01.gif) left top no-repeat;border:1px solid #c9c9c9;border-left:none;}
+.txt_list{flex:1 1 auto;overflow:hidden;display:table;float:right;padding:15px 20px 15px 20px;width:736px;min-height:90px;background:#fff url(https://www.childsupport.or.kr/images/sub/txtbox_arr01.gif) left top no-repeat;border:1px solid #c9c9c9;border-left:none;}
 .tl_dtn{display:block;}
 .tl_arr2{background:#fff url(https://www.childsupport.or.kr/images/sub/txtbox_arr02.gif) left top no-repeat;} /* 화살표 색2 */
 .tl_arr3{background:#fff url(https://www.childsupport.or.kr/images/sub/txtbox_arr03.gif) left top no-repeat;} /* 화살표 색3 */
@@ -625,8 +627,11 @@ a.dwn span{padding-right:22px; background:url(https://www.childsupport.or.kr/ima
 	
 	.list_sec2 ul li div.ls_txt{float:none; display:block; margin-left:174px; width:auto; height:auto; min-height:45px;}
 	
-	.txt_tit{width:100px; font-size:14px;}
-	.txt_list{display:block; float:none; width:auto;}
+	.txt_box2, .txt_box3, .txt_box4, .txt_box5{flex-direction: column;}
+	.txt_tit{width:100%; font-size:14px;}
+	.txt_tit p{padding:10px;}
+	.txt_list{display:block; float:none; width:auto;background:#fff;border-left:1px solid #c9c9c9;}
+	.txt_list ul{padding:0;}
 	.txt_list ul.type3 > li{float:none; width:auto;}
 	
 	.txt_box .txt_group{width:auto;}

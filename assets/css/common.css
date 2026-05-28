@@ -332,3 +332,5 @@ a.btn_type_2 {display:inline-block; text-align:center; width:74px; padding:5px 0
   overflow: hidden;
   clip-path: polygon(0 0, 0 0, 0 0);
 }
+
+.ui-datepicker{max-width:calc(100% - 40px) !important;min-width:280px !important;}
