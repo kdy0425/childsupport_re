@@ -151,7 +151,7 @@ ul.tabmenu02 li a.active{position:relative; background-color:#2d6497; border:1px
 .txt_tit p{padding-top:50px;}
 .txt_tit p.tt2{padding-top:37px;}
 .txt_tit p.tt3{padding-top:27px;}
-.txt_list{overflow:hidden; display:table; float:right; padding:15px 20px 15px 20px; width:736px; min-height:90px; background:#fff url(https://www.childsupport.or.kr/images/sub/txtbox_arr01.gif) left top no-repeat; border:1px solid #c9c9c9; border-left:none;}
+.txt_list{overflow:hidden;display:table;float:right;padding:15px 20px 15px 20px;width:736px;min-height:90px;background:#fff url(https://www.childsupport.or.kr/images/sub/txtbox_arr01.gif) left top no-repeat;border:1px solid #c9c9c9;border-left:none;}
 .tl_dtn{display:block;}
 .tl_arr2{background:#fff url(https://www.childsupport.or.kr/images/sub/txtbox_arr02.gif) left top no-repeat;} /* 화살표 색2 */
 .tl_arr3{background:#fff url(https://www.childsupport.or.kr/images/sub/txtbox_arr03.gif) left top no-repeat;} /* 화살표 색3 */
