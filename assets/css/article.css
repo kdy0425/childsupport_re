@@ -34,7 +34,7 @@ input.inp8{width:95%;}
 .t_option select{height:32px;}
 
 /* list_style_1 */
-.list_style_1{width:100%; table-layout:fixed; border-top:3px solid #4b5359; border-bottom:1px solid #4b5359;}
+.list_style_1{width:100%;/* table-layout:fixed; */border-top:3px solid #4b5359;border-bottom:1px solid #4b5359;}
 .list_style_1 th{padding:18px 0; background-color:#f5f5f5; border-right:1px solid #d6d6d6; border-top:1px solid #d6d6d6; font-size:14px; text-align:center;}
 .list_style_1 th.lst{border-right:none;}
 .list_style_1 td{padding:18px 0; border-right:1px solid #d6d6d6; border-top:1px solid #d6d6d6; text-align:center;}
@@ -108,15 +108,15 @@ input.inp8{width:95%;}
 
 /* insert_style_1 */
 table.center{text-align:center;}
-.insert_style_1{width:100%; table-layout:fixed; border-top:2px solid #585858; border-bottom:2px solid #585858;}
-.insert_style_1 th{padding:25px 20px 25px 28px; background-color:#f4f4f4; border-right:1px solid #c6c6c6; border-bottom:1px solid #e2e2e4; font-size:14px; text-align:left; line-height:20px; word-break:keep-all;}
+.insert_style_1{width:100%; border-top:2px solid #585858; border-bottom:2px solid #585858;}
+.insert_style_1 th{padding:25px 20px 25px 28px; background-color:#f4f4f4; border-right:1px solid #c6c6c6; border-bottom:1px solid #e2e2e4; font-size:14px; text-align:left; line-height:20px; word-break: break-all;vertical-align: middle;}
 .insert_style_1 th.left{text-align:left;}
 .insert_style_1 th.center{text-align:center;}
 .insert_style_1 th.lst{border-right:none;}
 .insert_style_1 th p.txt{font-size:13px;}
 .insert_style_1 th b{color:#cc3300;}
 .insert_style_1 th span.blockTxt{display:block; font-size:13px; line-height:18px;}
-.insert_style_1 td{padding:15px 13px; border-bottom:1px solid #e2e2e4; line-height:22px;}
+.insert_style_1 td{padding:15px 13px; border-bottom:1px solid #e2e2e4; line-height:22px;vertical-align: middle;}
 .insert_style_1 td.center{text-align:center;}
 .insert_style_1 td.lst{border-right:none;}
 .insert_style_1 td.bdr{border-right:1px solid #e2e2e4;}
@@ -141,6 +141,7 @@ table.center{text-align:center;}
 .insert_style_2 td div.rd_box span{display:inline-block; margin:5px 20px 5px 0; font-size:13px;}
 .insert_style_2 td div.rd_box input{margin-right:5px;}
 .insert_style_2 td p b{display:inline-block; margin-right:20px; width:80px; border-right:1px dotted #d6d6d6;}
+.calc_tb2 th{word-break: break-all;}
 
  /* paging */
 .paging{width:100%; text-align:center; font-size:0; margin-top:50px;}

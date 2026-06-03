@@ -208,7 +208,7 @@ ul.tabmenu02 li a.active{position:relative; background-color:#2d6497; border:1px
 .list_sec1 ul{overflow:hidden;} /* 화살표 들어간 list */
 .list_sec1 ul li{overflow:hidden; float:left; margin-right:40px; width:432px;}
 .list_sec1 ul li.lst{margin-right:0;}
-.list_sec1 ul li .ls_tit{display:table; float:left; padding-right:20px; width:130px; height:120px; background:#7f81aa url(https://www.childsupport.or.kr/images/sub/txtbox_arr01.gif) right center no-repeat; font-family:"MalgunGothic"; font-weight:bold; font-size:16px; color:#fff; text-align:center;}
+.list_sec1 ul li .ls_tit{position: relative;;display:table; float:left; padding-right:20px; width:130px; background:#7f81aa url(https://www.childsupport.or.kr/images/sub/txtbox_arr01.gif) right center no-repeat; font-family:"MalgunGothic"; font-weight:bold; font-size:16px; color:#fff; text-align:center;}
 .list_sec1 ul li .ls_c1{background:#8a7aa6 url(https://www.childsupport.or.kr/images/sub/txtbox_arr02.gif) right center no-repeat;}
 .list_sec1 ul li .ls_tit p{display:table-cell; vertical-align:middle;}
 .list_sec1 ul li .ls_txt{display:table; float:left; padding:15px 0 15px 10px; width:272px; height:90px; border-top:1px solid #c9c9c9; border-bottom:1px solid #c9c9c9;}
@@ -233,6 +233,20 @@ ul.tabmenu02 li a.active{position:relative; background-color:#2d6497; border:1px
 .list_sec3 ul li div.ls_txt{display:table; float:left; height:118px;}
 .list_sec3 ul li div.ls_txt ul{display:table-cell; vertical-align:middle;}
 .list_sec3 ul li div.ls_txt ul li{margin:0 0 8px 0; padding-left:8px; height:auto; background:url(https://www.childsupport.or.kr/images/sub/s_dot02.gif) 0 7px no-repeat; border:none; font-size:14px;}
+
+@media only screen and (min-width: 581px) {
+	.list_sec1 ul{display: grid;grid-template-columns: repeat(2,1fr);gap:40px;}
+	.list_sec1 ul li{width: auto;margin:0;}
+	.list_sec1 ul li .ls_wrap{height: 100%;display: flex;}
+	.list_sec1 ul li .ls_tit{min-height:120px; flex:0 0 auto;}
+	.list_sec1 ul li .ls_tit:before{content:"";position: absolute;right:0;top:0;width:20px;height: calc(50% - 10px);background-color: #fff;}
+	.list_sec1 ul li .ls_tit:after{content:"";position: absolute;right:0;bottom:0;width:20px;height: calc(50% - 10px);background-color: #fff;}
+	.list_sec1 ul li .ls_tit p{padding-left:10px;padding-right:10px;}
+	.list_sec1 ul li div.ls_txt{height: 100%;box-sizing: border-box;flex:1 1 auto;}
+}
+@media only screen and (min-width: 581px) and (max-width: 800px) {
+	.list_sec1 ul{display: grid;grid-template-columns: repeat(1,1fr);gap:20px;}
+}
 
 /* 행사일정 */
 .calendar_wrap_01{position:relative; overflow:hidden; margin-bottom:40px; padding:26px 0; background-color:#f6f4f7; border-top:3px solid #4d5057; border-bottom:3px solid #4d5057;}
@@ -622,6 +636,7 @@ a.dwn span{padding-right:22px; background:url(https://www.childsupport.or.kr/ima
 	.list_sec1 ul li{float:none; margin:0 0 10px; width:auto;}
 	.list_sec1 ul li .ls_txt{display:block; float:none; width:auto; height:88px;}
 	.list_sec1 ul li .ls_txt ul li{float:left; margin:0 15px 15px 0; width:auto;}
+	.list_sec1 ul li .ls_txt ul li:last-child{margin-bottom:0;}
 	.list_sec1 ul li .ls_txt ul.w_ul li{width:110px; margin:0 15px 15px 0;}
 	.list_sec1 ul li .ls_txt ul li.w_li{width:auto; overflow:visible;}
 	
@@ -1525,3 +1540,14 @@ table{font-size:13px;}
 	padding:16px;
 	}
   }
+  /* 선지급 -신청인증하기 버튼 글씨 짤림 보정 */
+  #certification_account_btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 72px;
+    padding: 0 12px;
+    line-height: 1;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
