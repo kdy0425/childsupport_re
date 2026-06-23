@@ -331,11 +331,11 @@ ul.doc3 > li > .doc_txt > ul > li:first-child{margin-top:0;}
 
 /* 양육비 이행확보 지원신청 */
 .step{margin-bottom:40px;}
-.intro_wrap{padding:20px 30px; border:1px solid #c4c4c4;}
-.intro_wrap h4{margin-bottom:17px; padding:12px 0 0 54px; height:33px; background:url(https://www.childsupport.or.kr/images/sub/sign_icon.gif) 0 0 no-repeat; font-family:"MalgunGothic"; font-weight:bold; font-size:18px;}
-.intro_wrap h4.online{background:url(https://www.childsupport.or.kr/images/sub/online_icon.gif) 0 0 no-repeat;}
-.intro_wrap h4.post{background:url(https://www.childsupport.or.kr/images/sub/post_icon.gif) 0 0 no-repeat;}
-.intro_wrap h5{margin-bottom:12px; font-family:"MalgunGothic"; font-weight:bold; font-size:16px; color:#3180bd;}
+html .intro_wrap{padding:20px 30px; border:1px solid #c4c4c4;}
+html .intro_wrap h4{margin-bottom:17px; padding:12px 0 0 54px; height:33px; background:url(https://www.childsupport.or.kr/images/sub/sign_icon.gif) 0 0 no-repeat; font-family:"MalgunGothic"; font-weight:bold; font-size:18px;}
+html .intro_wrap h4.online{background:url(https://www.childsupport.or.kr/images/sub/online_icon.gif) 0 0 no-repeat;}
+html .intro_wrap h4.post{background:url(https://www.childsupport.or.kr/images/sub/post_icon.gif) 0 0 no-repeat;}
+html .intro_wrap h5{margin-bottom:12px; font-family:"MalgunGothic"; font-weight:bold; font-size:16px; color:#3180bd;}
 .intro_wrap p{font-size:14px;}
 .intro_wrap ul li{margin-bottom:8px; padding-left:8px; background:url(https://www.childsupport.or.kr/images/sub/s_dot05.gif) 0 8px no-repeat; font-weight:bold; font-size:14px; line-height:20px;}
 .intro_wrap ul li ul{margin:10px 0;}
@@ -585,8 +585,6 @@ a.dwn span{padding-right:22px; background:url(https://www.childsupport.or.kr/ima
 	
 	.sub_contents h4.dot_none{font-size:16px;}
 	.sub_contents h4.dot_none2{font-size:16px;}
-	
-	.sub_contents .intro_wrap{display: none;}
 	
 	.section1{padding:0;}
 	.section1 p img{width:100% !important; height:auto !important;}
