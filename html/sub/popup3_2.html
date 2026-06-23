@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>가족 전자동의</title>
+<link rel="stylesheet" href="../../assets/css/normalize.css">
+<link rel="stylesheet" href="../../assets/css/common.css">
+<link rel="stylesheet" href="../../assets/css/sub.css">
+</head>
+<body class="econs_popup">
+    <main class="econs_form">
+        <button type="button" class="pop_close" onclick="window.close()" aria-label="창 닫기">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M6 18.3799L18 6.37988" stroke="#222222" stroke-width="2" stroke-linecap="round"/> <path d="M18 18.3799L6 6.37988" stroke="#222222" stroke-width="2" stroke-linecap="round"/> </svg>
+        </button>
+
+        <header class="pop_head">
+            <h1>가족 전자동의</h1>
+            <p>아래 동의 대상자 정보를 확인하고 각 항목의 동의 여부를 선택해 주세요.</p>
+        </header>
+
+        <section aria-labelledby="consent-person-title">
+            <h2 id="consent-person-title">동의 대상자 정보</h2>
+            <dl class="person_info">
+                <div>
+                    <dt>이름</dt>
+                    <dd>홍길순</dd>
+                </div>
+                <div>
+                    <dt>생년월일</dt>
+                    <dd>2022.09.14</dd>
+                </div>
+                <div>
+                    <dt>휴대전화</dt>
+                    <dd><span class="pc_value">-</span><span class="mobile_value">010-1214-1235</span></dd>
+                </div>
+                <div>
+                    <dt>만 14세 미만</dt>
+                    <dd><strong>해당</strong></dd>
+                </div>
+            </dl>
+        </section>
+
+        <section class="agree_sec" aria-labelledby="agreement-title">
+            <h2 id="agreement-title">동의 여부</h2>
+
+            <article class="agree_item">
+                <button type="button" class="agree_head" aria-expanded="false">
+                    <span>개인정보 수집·이용 동의</span>
+                    <span class="agree_toggle">내용보기</span>
+                    <span class="agree_arrow" aria-hidden="true"></span>
+                </button>
+                <div class="agree_cont">
+                    <p>회원 식별 및 서비스 이용을 위해 아래와 같이 개인정보를 추가 수집·이용합니다.</p>
+                    <ul>
+                        <li>수집 항목 : CI(연계정보), DI(중복가입확인정보)</li>
+                        <li>수집 목적 : 회원 본인확인 및 기존 회원정보 연계</li>
+                        <li>보유 및 이용 기간 : 회원 탈퇴 시까지</li>
+                        <li>동의 거부 권리 및 불이익 : 이용자는 개인정보 수집·이용에 대한 동의를 거부할 권리가 있으나, 동의 거부 시 본인확인 및 일부 서비스 이용이 제한될 수 있습니다.</li>
+                    </ul>
+                    <p>※ 본인확인 과정에서 수집되는 정보는 관련 법령에 따라 안전하게 관리됩니다.</p>
+                </div>
+                <div class="agree_opts">
+                    <label><input type="radio" name="privacy" value="agree"><span></span>동의합니다.</label>
+                    <label><input type="radio" name="privacy" value="disagree"><span></span>동의하지 않습니다.</label>
+                </div>
+            </article>
+
+            <article class="agree_item">
+                <button type="button" class="agree_head" aria-expanded="false">
+                    <span>행정정보 공동이용 동의</span>
+                    <span class="agree_toggle">내용보기</span>
+                    <span class="agree_arrow" aria-hidden="true"></span>
+                </button>
+                <div class="agree_cont">
+                    <p>회원 식별 및 서비스 이용을 위해 아래와 같이 개인정보를 추가 수집·이용합니다.</p>
+                    <ul>
+                        <li>수집 항목 : CI(연계정보), DI(중복가입확인정보)</li>
+                        <li>수집 목적 : 회원 본인확인 및 기존 회원정보 연계</li>
+                        <li>보유 및 이용 기간 : 회원 탈퇴 시까지</li>
+                    </ul>
+                </div>
+                <div class="agree_opts">
+                    <label><input type="radio" name="administration" value="agree"><span></span>동의합니다.</label>
+                    <label><input type="radio" name="administration" value="disagree"><span></span>동의하지 않습니다.</label>
+                </div>
+            </article>
+
+            <article class="agree_item">
+                <button type="button" class="agree_head" aria-expanded="false">
+                    <span>소득재산조사 동의</span>
+                    <span class="agree_toggle">내용보기</span>
+                    <span class="agree_arrow" aria-hidden="true"></span>
+                </button>
+                <div class="agree_cont">
+                    <p>회원 식별 및 서비스 이용을 위해 아래와 같이 개인정보를 추가 수집·이용합니다.</p>
+                    <ul>
+                        <li>수집 항목 : CI(연계정보), DI(중복가입확인정보)</li>
+                        <li>수집 목적 : 회원 본인확인 및 기존 회원정보 연계</li>
+                        <li>보유 및 이용 기간 : 회원 탈퇴 시까지</li>
+                    </ul>
+                </div>
+                <div class="agree_opts">
+                    <label><input type="radio" name="income" value="agree"><span></span>동의합니다.</label>
+                    <label><input type="radio" name="income" value="disagree"><span></span>동의하지 않습니다.</label>
+                </div>
+            </article>
+
+            <div class="action_btns">
+                <button type="button" class="primary">동의하기</button>
+            </div>
+        </section>
+    </main>
+
+    <script>
+    document.querySelectorAll('.agree_head').forEach(function (button) {
+        button.addEventListener('click', function () {
+            if (window.matchMedia('(min-width: 680px)').matches) return;
+            var item = button.closest('.agree_item');
+            var isOpen = item.classList.toggle('open');
+            button.setAttribute('aria-expanded', String(isOpen));
+        });
+    });
+
+    document.querySelector('.action_btns .primary').addEventListener('click', function () {
+        var groups = ['privacy', 'administration', 'income'];
+        var isComplete = groups.every(function (name) {
+            return document.querySelector('input[name="' + name + '"]:checked');
+        });
+
+        if (!isComplete) {
+            alert('모든 동의 항목을 선택해 주세요.');
+            return;
+        }
+
+        window.location.href = 'popup3_3.html';
+    });
+    </script>
+</body>
+</html>

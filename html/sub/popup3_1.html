@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>가족 전자동의 현황</title>
+<link rel="stylesheet" href="../../assets/css/normalize.css">
+<link rel="stylesheet" href="../../assets/css/common.css">
+<link rel="stylesheet" href="../../assets/css/sub.css">
+</head>
+<body class="econs_popup">
+    <main class="econs_status">
+        <button type="button" class="pop_close" onclick="window.close()" aria-label="창 닫기">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M6 18.3799L18 6.37988" stroke="#222222" stroke-width="2" stroke-linecap="round"/> <path d="M18 18.3799L6 6.37988" stroke="#222222" stroke-width="2" stroke-linecap="round"/> </svg>
+        </button>
+
+        <header class="pop_head">
+            <h1>가족 전자동의 현황</h1>
+            <p>가족을 선택한 뒤 연령에 맞는 동의 방법을 진행해 주세요.</p>
+        </header>
+
+        <section aria-labelledby="consent-list-title">
+            <h2 id="consent-list-title">전자동의 목록</h2>
+            <div class="status_tbl_wrap">
+                <table class="status_tbl">
+                    <caption class="sound_only">가족별 전자동의 현황</caption>
+                    <colgroup>
+                        <col width="8%">
+                        <col width="16%">
+                        <col width="10%">
+                        <col width="16%">
+                        <col width="22%">
+                        <col width="14%">
+                        <col width="14%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">선택</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">나이</th>
+                            <th scope="col">동의 방법</th>
+                            <th scope="col">휴대전화번호</th>
+                            <th scope="col">동의 요청</th>
+                            <th scope="col">동의 여부</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr class="selected"> -->
+                        <tr>
+                                <td class="check_cell">
+                                <label class="check_box">
+                                    <input type="checkbox" aria-label="홍길동 선택" data-age="3" data-method="전자동의">
+                                    <span aria-hidden="true"></span>
+                                </label>
+                            </td>
+                            <td data-label="이름">홍길동</td>
+                            <td data-label="나이">3</td>
+                            <td data-label="동의 방법"><strong class="method">전자동의</strong></td>
+                            <td data-label="휴대전화번호">010-1234-5678</td>
+                            <td data-label="동의 요청">Y</td>
+                            <td data-label="동의 여부"><span class="status wait">대기</span></td>
+                        </tr>
+                        <tr>
+                            <td class="check_cell">
+                                <label class="check_box">
+                                    <input type="checkbox" aria-label="홍길순 선택" data-age="6" data-method="서면동의">
+                                    <span aria-hidden="true"></span>
+                                </label>
+                            </td>
+                            <td data-label="이름">홍길순</td>
+                            <td data-label="나이">6</td>
+                            <td data-label="동의 방법"><strong class="method">서면동의</strong></td>
+                            <td data-label="휴대전화번호">010-1234-5678</td>
+                            <td data-label="동의 요청">Y</td>
+                            <td data-label="동의 여부"><span class="status done">완료</span></td>
+                        </tr>
+                        <tr>
+                            <td class="check_cell">
+                                <label class="check_box">
+                                    <input type="checkbox" aria-label="홍미나 선택" data-age="40" data-method="전자동의">
+                                    <span aria-hidden="true"></span>
+                                </label>
+                            </td>
+                            <td data-label="이름">홍미나</td>
+                            <td data-label="나이">40</td>
+                            <td data-label="동의 방법"><strong class="method">전자동의</strong></td>
+                            <td data-label="휴대전화번호">010-1234-5678</td>
+                            <td data-label="동의 요청">Y</td>
+                            <td data-label="동의 여부"><span class="status wait">대기</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <ul class="guide_list">
+                <li>만 14세 미만 가족은 법정대리인인 신청인의 전자서명으로 처리됩니다.</li>
+                <li>만 14세 이상 가족은 등록된 휴대전화번호로 전자동의 메시지가 발송됩니다.</li>
+                <li>서면동의로 변경하면 진행 중인 전자동의 요청은 사용할 수 없습니다.</li>
+                <li>전자동의가 완료되면 이 화면에서 최신 상태를 확인할 수 있습니다.</li>
+            </ul>
+
+            <div class="action_btns">
+                <button type="button" disabled class="primary">미성년자 보호자 동의</button>
+                <button type="button" disabled>전자동의 문자 발송</button>
+                <button type="button" disabled>서면동의 처리</button>
+            </div>
+        </section>
+    </main>
+
+    <script>
+    var guardianBtn = document.querySelector('.action_btns .primary');
+    var smsBtn = document.querySelector('.action_btns button:nth-child(2)');
+    var writtenBtn = document.querySelector('.action_btns button:nth-child(3)');
+
+    function updateButtons() {
+        var row = document.querySelector('.status_tbl input[type="checkbox"]:checked');
+        guardianBtn.disabled = true;
+        smsBtn.disabled = true;
+        writtenBtn.disabled = true;
+        if (!row) return;
+
+        row = row.closest('tr');
+        var age = parseInt(row.querySelector('[data-label="나이"]').textContent, 10);
+        var isElectronic = row.querySelector('[data-label="동의 방법"] .method').textContent.trim() === '전자동의';
+
+        if (age < 14) {
+            guardianBtn.disabled = false;
+            if (isElectronic) writtenBtn.disabled = false;
+            else smsBtn.disabled = false;
+        } else {
+            if (isElectronic) writtenBtn.disabled = false;
+            else smsBtn.disabled = false;
+        }
+    }
+
+    document.querySelectorAll('.status_tbl input[type="checkbox"]').forEach(function (checkbox) {
+        checkbox.addEventListener('change', function () {
+            checkbox.closest('tr').classList.toggle('selected', checkbox.checked);
+            updateButtons();
+        });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>가족 전자동의 팝업</title>
+<link rel="stylesheet" href="../../assets/css/normalize.css">
+<link rel="stylesheet" href="../../assets/css/common.css">
+<link rel="stylesheet" href="../../assets/css/sub.css">
+</head>
+<body >
+    <main>
+        <div>
+            <button type="button" onclick="openElectronicConsentPopup('popup3_1.html', 'electronicConsentStatus', 680, 700)">가족 전자동의 현황</button>
+            <button type="button" onclick="openElectronicConsentPopup('popup3_2.html', 'electronicConsentForm', 680, 900)">가족 전자동의</button>
+            <button type="button" onclick="openElectronicConsentPopup('popup3_3.html', 'electronicConsentComplete', 680, 400)">동의완료</button>
+        </div>
+    </main>
+
+    <script>
+    function openElectronicConsentPopup(url, name, width, height) {
+        var screenWidth = window.screen.availWidth || window.innerWidth;
+        var screenHeight = window.screen.availHeight || window.innerHeight;
+        var popupWidth = Math.min(width, screenWidth);
+        var popupHeight = Math.min(height, screenHeight);
+        var left = Math.max(0, Math.round((screenWidth - popupWidth) / 2));
+        var top = Math.max(0, Math.round((screenHeight - popupHeight) / 2));
+        var features = [
+            'width=' + popupWidth,
+            'height=' + popupHeight,
+            'left=' + left,
+            'top=' + top,
+            'resizable=yes',
+            'scrollbars=yes'
+        ].join(',');
+        var popup = window.open(url, name, features);
+        if (popup) popup.focus();
+    }
+    </script>
+</body>
+</html>
