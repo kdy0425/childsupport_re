@@ -1746,7 +1746,7 @@ body.econs_popup {
 .econs_popup .agree_item {
 	padding:0 0 14px;
 }
-.agree_sec .agree_item + .agree_item{border-top:1px solid #DFDFDF;}
+.agree_sec .agree_item + .agree_item{border-top:1px solid #f2f2f2;}
 .econs_popup .agree_item + .agree_item {padding-top:16px;}
 .econs_popup .agree_head {
 	display:flex;
