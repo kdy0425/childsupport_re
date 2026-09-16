@@ -38,7 +38,7 @@ input.inp8{width:95%;}
 .list_style_1 th{padding:18px 0; background-color:#f5f5f5; border-right:1px solid #d6d6d6; border-top:1px solid #d6d6d6; font-size:14px; text-align:center;}
 .list_style_1 th.lst{border-right:none;}
 .list_style_1 td{padding:18px 0; border-right:1px solid #d6d6d6; border-top:1px solid #d6d6d6; text-align:center;}
-.list_style_1 td.left{padding-left:15px; text-align:left; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.list_style_1 td.left{padding-left:15px; text-align:left; }
 .list_style_1 td.qna{padding-left:15px;padding-right:15px; text-align:left; line-height:20px;}
 .list_style_1 td.lst{border-right:none;}
 .list_style_1 td.qna div.answer img{max-width:100%;height: auto !important;}
