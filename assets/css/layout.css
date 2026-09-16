@@ -42,6 +42,7 @@
 .hd_util .hd_time strong{font-weight:700;padding-left: 20px;background-position: left center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 0.75C12.0041 0.75 15.25 3.99594 15.25 8C15.25 12.0041 12.0041 15.25 8 15.25C3.99594 15.25 0.75 12.0041 0.75 8C0.75 3.99594 3.99594 0.75 8 0.75Z' stroke='%23BDBDBD' stroke-width='1.5'/%3E%3Cpath d='M8 4V8H12' stroke='%23BDBDBD' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E%0A");}
 .hd_util .hd_time button{border-radius:8px;border:1px solid #E0E0E0;background-color: #fff;height: 32px;color:#4f4f4f;font-weight:500;padding:0 12px;}
 .hd_util .hd_time button:hover{background-color: #f9f9f9;}
+.hd_util .hd_korea img{display:block;height:32px;}
 .hd_util .hd_blog{position: relative;}
 .hd_util .hd_blog a{display: block;width: 24px;height: 24px;text-indent: -999em;overflow: hidden;background-position: center center;background-size: contain;background-image: url('../images/common/hd_blog.png');}
 .hd_util .hd_lang{position: relative;}
@@ -88,6 +89,8 @@
 .hd_buttons button svg{display: block;}
 .hd_buttons .hd_btn_allmenu{box-sizing:border-box;align-items:center;justify-content:center;color:inherit;}
 .hd_buttons a.hd_btn_blog{display: none;width: 20px;height: 20px;background-position: center center;background-size: contain;background-repeat: no-repeat;background-image: url('../images/common/hd_blog.png');}
+.hd_buttons .hd_korea_mobile{display:none;}
+.hd_buttons .hd_korea_mobile img{display:block;height:20px;}
 .hd_buttons a.hd_btn_allmenu{display:none;text-decoration:none;}
 .hd_buttons button.hd_btn_allmenu{display:none;}
 .hd_buttons button.hd_btn_allmenu--mo{display:inline-flex;}
@@ -103,6 +106,7 @@
     .hd_menu ul#nav li a{padding:0 35px;}
 }
 @media screen and (max-width:1580px) {
+    .hd_util > div{padding:0 19px;}
     .hd_menu ul#nav{justify-content: end;padding-right:120px;}
     #logo img {height:36px;}
     .hd_menu ul#nav li a{padding:0 25px;font-size:1.7rem;}
@@ -121,6 +125,7 @@
     .hd_menu{display: none;}
     .hd_buttons{bottom:auto;top:50%;transform: translate(0,-50%);gap: 8px;}
     .hd_buttons button svg{width:24px;height: 24px;}
+    .hd_buttons .hd_korea_mobile{display:block;}
     .hd_buttons a.hd_btn_blog{display: block;}
 }
 
